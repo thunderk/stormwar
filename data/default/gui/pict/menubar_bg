@@ -1,0 +1,7 @@
+[
+    #picture         = "gui/pict/menubar_bg.png",
+    #border_left     = 5,
+    #border_right    = 5,
+    #border_top      = 0,
+    #border_bottom   = 0
+]

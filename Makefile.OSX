@@ -1,0 +1,33 @@
+# This file is used to compile under Mac OS X (test)
+# Based on the original makefile for Wine/Win32
+# Author: CLEMENT Julien
+
+OBJ = src/kernel.o src/main.o src/graphics/impl/glmesh.o src/graphics/impl/light.o src/graphics/impl/types.o src/graphics/impl/gltextrender.o src/graphics/impl/keyboard.o src/graphics/impl/camera.o src/graphics/impl/particle.o src/graphics/impl/gltextures.o src/graphics/impl/color.o src/graphics/impl/gliterator.o src/graphics/impl/glscreen.o src/graphics/impl/opengl.o src/graphics/impl/graphics.o src/graphics/impl/input.o src/graphics/impl/gl3dobject.o src/graphics/impl/gl2dobject.o src/graphics/impl/glsurface.o src/graphics/impl/glmeshpart.o src/graphics/impl/cursor.o src/sound/sound.o src/core/impl/ptrarray.o src/core/impl/i18n.o src/core/impl/core.o src/core/impl/shellfunction.o src/core/impl/comp.o src/core/impl/string.o src/core/impl/shell.o src/core/impl/var.o src/core/impl/reader.o src/tools/completion.o src/tools/anim.o src/tools/varvalidator.o src/tools/internal/texturizer.o src/tools/tools.o src/tools/fonct.o src/gui/gui.o src/gui/worldmap.o src/gui/guitexture.o src/gui/guidialog.o src/gui/internal/sidepanel.o src/gui/internal/guitheme.o src/gui/internal/guiinput.o src/gui/internal/guishell.o src/gui/internal/guipopupmenu.o src/gui/internal/guitooltip.o src/gui/internal/guiscrollbar.o src/gui/internal/guibutton.o src/gui/internal/gamedialogs.o src/gui/internal/guioutput.o src/gui/internal/menubar.o src/gui/internal/guiwidget.o src/test.o src/system/mem.o src/game/game.o src/game/internal/gamecamera.o src/game/internal/droprules.o src/game/internal/piece.o src/game/internal/player.o src/game/internal/entity.o src/game/internal/register.o src/world/ground.o src/world/world.o src/world/env.o src/world/internal/skybox.o src/world/internal/flocking.o src/world/internal/thunderbolt.o
+
+CC   = gcc
+
+LINKOBJ  = $(OBJ)
+
+# For the moment, I assume you use fink, and hence that SDL isn't compiled as a framework
+# LIBS =  -L/usr/lib -L/sw/lib -lSDLmain -lSDL -lSDL_image -lSDL_mixer -framework OpenGL
+
+LIBS =  -L/usr/lib -L/sw/lib `sdl-config --libs --cflags` -lSDL_image -lSDL_mixer -framework OpenGL
+
+INCS =  -I/usr/include -I/System/Library/Frameworks/OpenGL.framework/Versions/Current/Headers  -I"." -I".." -I"src" -I/sw/include -I/sw/include/SDL
+
+BIN  = stormwar
+
+# I've put an "OSX" tag in case we'd need some special
+# actions to undertake on OS X.
+CFLAGS = $(INCS) -O4 -W -Wall -ansi -D__OSX__ -DDATA_DIR="\"$(pwd)/data\""
+
+all: $(BIN)
+
+clean: 
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+%.o : %.c
+	$(CC) $(CFLAGS) -c $*.c -o $*.o

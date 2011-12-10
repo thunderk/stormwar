@@ -1,0 +1,63 @@
+For more todos, see the doxygen file block of each .h file.
+There are also /*TODO:...*/ and /*FIXME:...*/ comments directly inside the code for little things that can wait.
+
+
+Critical things to change/fix/add:
+----------------------------------
+
+    * Network:
+        - Network currently write and read Float values from binary as Uint32, which may be wrong on several platforms.
+          We must think of a platform-independent float coding for network transmission.
+          See also about negative conversions.
+        - Protect pv_NetworkConnection fields from concurrent accesses (make network thread-safe).
+    * Game:
+        - Game modules should only produce diffs if there are remote players connected.
+        - Check that the player ID sent in orders match the connection.
+    * Graphics:
+        - GLEVENT_DRAW should be casted BEFORE drawings (and collectors should receive it before frame drawing).
+
+
+Features to add:
+----------------
+    * Network:
+        - Timeouts handling.
+        - Spam protection (if a client sends too much packets, it will be blocked temporarily).
+        - Packet validation (if the number of unvalidated packet is too high, maybe kick).
+    * Gui:
+        - Add a sort of GuiEventCallback to dialogs, to see if a field has been modified or validated.
+
+
+Annoying bugs to fix:
+---------------------
+    - The game segfaults sometimes near the very beginning. Very hard to reproduce.
+    - When the client name is already in use, the kick is done AFTER asking the server player a decision.
+    - In windowed mode, mouse is sometimes at the edges causing scrolling (at startup and screen resizing).
+    - When enlarging screen, edge objects are not drawn (the control points system keeps telling they are off-screen) until camera moves.
+    - The sound is delayed under win32 platforms.
+
+
+Major rewrites needed:
+----------------------
+    - Rewrite ground code to be more flexible and coherent.
+    - guipiecelist and worldmap are quite a mess and could really be improved and optimized.
+
+
+Major optimizations to do:
+--------------------------
+    - Game registers should use more pointers on algos (mostly for sections).
+
+
+Code cleaning to do:
+--------------------
+    - ptrarray.h should have the pv_PtrArray structure private and replace macro use. Maybe use a single internal iterator
+        (like in registers) rather than external iterators (may avoid the use of marks).
+
+
+Tests to perform:
+-----------------
+    - Delete a permanently popped asynchronous queue while it is not empty to check if it exits before or after
+      treating, or if it simply crashes.
+
+
+Weird bugs to understand:
+-------------------------

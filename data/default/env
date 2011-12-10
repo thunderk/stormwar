@@ -1,0 +1,152 @@
+#env =
+[
+    #thunderbolts = 
+    [
+        #frequency = 880,
+        #sound = "thunder01"
+    ],
+    
+    #skybox = 
+    [
+        #mesh = @"meshes/skybox",
+        #anim = "calm",
+        #col = [#r = 170, #g = 170, #b = 170, #a = 255],
+        #collightning = [#r = 225, #g = 225, #b = 225, #a = 255],
+        #lightningfadein = 30,
+        #lightningfadeout = 40
+    ],
+    
+    #lights =
+    [
+        #light1 =
+        [
+            #col_ambient = [#r = 50, #g = 50, #b = 50],
+            #col_diffuse = [#r = 128, #g = 128, #b = 128],
+            #col_specular = [#r = 128, #g = 128, #b = 128],
+            #angh = 0.392699,
+            #angv = -0.785398,
+            #posx = -2000.0,
+            #posy = 2000.0,
+            #posz = -2000.0,
+            #attmode = 0,
+            #attfactor = 1.0,
+            #exponent = 0.0,
+            #cutoff = 180.0
+        ],
+        #light2 =
+        [
+            #col_ambient = [#r = 25, #g = 25, #b = 25],
+            #col_diffuse = [#r = 64, #g = 64, #b = 64],
+            #col_specular = [#r = 64, #g = 64, #b = 64],
+            #angh = -2.74889,
+            #angv = 0.785398,
+            #posx = 2000.0,
+            #posy = -2000.0,
+            #posz = 2000.0,
+            #attmode = 0,
+            #attfactor = 1.0,
+            #exponent = 0.0,
+            #cutoff = 180.0
+        ]
+    ],
+
+    #flocks =
+    [
+        #flock1 =
+        [
+            #number = 20, #anim = "fly",
+            #xrel = 1, #zrel = 1, #xmin = -5.0, #xmax = 5.0, #ymin = 4.0, #ymax = 20.0, #zmin = -5.0, #zmax = 5.0,
+            #response = 0.02, #xmul = 1.0, #ymul = 0.5, #zmul = 1.0,
+            #mesh =
+            [
+                #anim =
+                [
+                    #fly =
+                    [
+                        #part00_rightwing =
+                        [
+                            #x = [],
+                            #y = [],
+                            #z = [],
+                            #angh = [0, 1.5708],
+                            #angv = [0, 0.9, 400, -0.5, 1000, 0.9]
+                        ],
+                        
+                        #part01_leftwing =
+                        [
+                            #x = [],
+                            #y = [],
+                            #z = [],
+                            #angh = [0, 1.5708],
+                            #angv = [0, -0.9, 400, 0.5, 1000, -0.9]
+                        ]
+                    ]
+                ],
+                
+                #controlpoints = [],
+                
+                #parts =
+                [
+                    #part00_rightwing =
+                    [
+                        #tex = "black",
+                        #flatshading = 1,
+                        #twosided = 1,
+                        #blended = 1,
+                        #normalsmode = 0,
+                        #texcoordsmode = 0,
+                        #vertices =
+                        [
+                            [ 0.0, 0.0, -0.1 ],
+                            [ 0.0, 0.0, 0.1 ],
+                            [ 0.5, 0.0, 0.0 ]
+                        ],
+                        #normals =
+                        [
+                            [ 0.0, 1.0, 0.0 ]
+                        ],
+                        #texcoords =
+                        [
+                            [ 0.0, 0.0 ],
+                            [ 1.0, 1.0 ],
+                            [ 0.0, 1.0 ]
+                        ],
+                        #faces =
+                        [
+                            [ 0, 2, 1 ]
+                        ]
+                    ],
+                    #part01_leftwing =
+                    [
+                        #tex = "black",
+                        #flatshading = 1,
+                        #twosided = 1,
+                        #blended = 1,
+                        #normalsmode = 0,
+                        #texcoordsmode = 0,
+                        #vertices =
+                        [
+                            [ 0.0, 0.0, 0.1 ],
+                            [ 0.0, 0.0, -0.1 ],
+                            [ -0.5, 0.0, 0.0 ]
+                        ],
+                        #normals =
+                        [
+                            [ 0.0, 1.0, 0.0 ]
+                        ],
+                        #texcoords =
+                        [
+                            [ 0.0, 0.0 ],
+                            [ 1.0, 1.0 ],
+                            [ 0.0, 1.0 ]
+                        ],
+                        #faces =
+                        [
+                            [ 0, 2, 1 ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]

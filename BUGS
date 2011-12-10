@@ -1,0 +1,48 @@
+***********************
+*** Troubleshooting ***
+***********************
+
+* The sound doesn't work, or works bad...
+
+    You have to choose a correct sound driver for SDL.
+    This can be done by setting the SDL_AUDIODRIVER environment variable.
+    For example: type 'export SDL_AUDIODRIVER=dsp' in a terminal before
+    running the game in it.
+
+    Several drivers are available, you can find a full list on the web:
+        'alsa', 'dsp' (most compatible), 'artsd', 'esd'...
+
+* On win32 platforms, some rows become hidden on the top after switching to
+  windowed mode...
+
+    This problem is very weird but can often be solved by moving the window a little.
+
+
+* Help ! The game crashes...
+
+    Well, there are some few things you can do that might help the developers in finding the problem:
+
+        - Delete the preferences file ('~/.stormwar' on Unix-based systems,
+            'C:\Documents and Settings\username\Application Data\stormwar.sav' on win32 platforms)
+            and launch the game again to see if it still crashes.
+
+        - Run the game from a terminal with parameter "-sl log.txt" to write the shell log to a file
+            and see if this file contains error lines. If so, send it to a developer (see inside the
+            AUTHORS file).
+
+        - If you are on a GNU compatible system and are familiar with compiling,
+          try to activate some debug options at compile time:
+            ./configure --enable-debug_compile --enable-asserts --enable-debug_opengl
+          You can also manually declare in the main.h file (before any includes):
+            #define ASSERTS 1
+            #define DEBUG_OPENGL 1
+          Don't forget to (re)build the game.
+          With these debugging options, you can run the game and save the log to a file:
+            stormwar -sl log.txt
+          Then send the log to a developer (see inside the AUTHORS file).
+
+        - If you are even more familiar with programming, you can send the full backtrace of the
+            crash to a developer (see inside the AUTHORS file).
+
+
+* Other known bugs listed in the TODO file will be fixed as soon as possible.

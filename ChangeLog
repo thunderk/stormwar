@@ -1,0 +1,1790 @@
+***** 2006/07/19 *****
+
+src/game/impl/string.c:
+    - Fixed String_erase using a wrong size to move down the remaining chunk.
+
+***** 2006/05/21 *****
+
+src/game/impl/register.c:
+    - Added allocatable sections.
+    - Information stored is now (CoreID, void*).
+
+***** 2006/05/13 *****
+
+src/game/impl/gltextures.c:
+    - Fixed textures not being reloaded properly with variants, causing segfault on win32 platforms.
+
+***** 2006/05/12 *****
+
+src/game/impl/movement.c:
+    - Fixed network synchro.
+
+***** 2006/05/07 *****
+
+src/game/impl/movement.c:
+    - Added network syncro of waypoints.
+
+src/core/impl/network.c:
+    - Added synchonized network time management.
+
+***** 2006/05/06 *****
+
+src/game/impl/movement.c:
+    - Air movement is now done.
+
+***** 2006/05/05 *****
+
+src/gui/guidialog.c:
+    - Fixed a memleak.
+
+***** 2006/05/01 *****
+
+src/core/thread.h:
+src/core/impl/thread.c:
+*:
+    - Brand new thread system featuring private threads, slots in main thread with different timings and a control thread.
+
+***** 2006/04/29 *****
+
+src/core/impl/i18n.c:
+src/graphics/impl/color.c:
+src/graphics/impl/cursor.c:
+src/graphics/impl/gltextures.c:
+    - Made variable validators static and reusable.
+
+src/core/impl/varvalidator.c:
+src/core/impl/var.c:
+    - Optimized some things.
+
+src/game/*:
+    - Started movable pieces management.
+
+src/core/ptrarray.h:
+src/core/impl/ptrarray.c:
+    - Added PtrArray_sortOne.
+
+***** 2006/04/27 *****
+
+src/game/impl/pieces.c:
+    - Blended objects are added to the blended graphical group.
+
+src/game/impl/world.h:
+src/game/impl/world.c:
+    - Added worldIsOutOfBounds.
+
+src/game/impl/pieces.h:
+src/game/impl/pieces.c:
+    - Added piecesIsSelectable.
+
+src/game/impl/droprules.c:
+    - Added checking that the object isn't out of world boundaries.
+
+src/game/impl/selection.c:
+    - Fixed selection cycling. Now ignoring non-selectable pieces.
+
+***** 2006/04/25 *****
+
+src/graphics/impl/gltextures.h:
+src/graphics/impl/gltextures.c:
+src/graphics/impl/glmeshpart.c:
+src/graphics/impl/glmeshpart.h:
+src/graphics/impl/gl3dobject.c:
+src/graphics/impl/glmesh.c:
+src/graphics/impl/particle.c:
+src/graphics/gl3dobject.h:
+    - Added texture variants.
+
+src/game/impl/world.c:
+    - Use texture variants to change the ground textures according to the ground owner.
+
+***** 2006/04/24 *****
+
+src/game/impl/pieces.c:
+    - Fixed nested loops using same variable in applyDiff, causing some diffs to be ignored.
+
+***** 2006/04/23 *****
+
+src/game/impl/game.c:
+src/game/impl/players.c:
+    - Added initial resources for players.
+
+src/game/impl/bahavior.c:
+    - Added resource cost.
+
+***** 2006/04/12 *****
+
+src/game/impl/pieces.c:
+    - Added PIECEDIFF_ORDERRES packets management.
+
+src/graphics/gltextrender.h:
+src/graphics/impl/gltextrender.c:
+    - Added "fontname" and "blend" in the definition variable.
+    - Added ResCode support.
+    - Added copy mode for arbitrary blending.
+
+src/gui/internal/guishell.c:
+    - Disabled shell callback while loading guishell data.
+
+src/game/impl/messaging.c:
+    - Added timer for messages.
+
+***** 2006/04/11 *****
+
+src/game/impl/messaging.c:
+    - Messaging system basically operational.
+
+src/game/impl/guipiecelist.h:
+src/game/impl/guipiecelist.c:
+src/game/impl/pieces.h:
+src/game/impl/pieces.c:
+    - Fixed the piece selected for building.
+
+src/gui/guidialog.c:
+    - When a child throws a GUIEVENT_VALIDATE, the dialog fakes a default button clicking (it takes the first of the buttons).
+
+src/game/impl/game.c:
+    - Dialog data are now stored as preferences.
+
+***** 2006/04/10 *****
+
+src/game/impl/worldmap.h:
+src/game/impl/worldmap.c:
+    - Worldmap module moved from gui to game.
+
+src/game/impl/messaging.h:
+src/game/impl/messaging.c:
+    - Started the messaging system.
+
+***** 2006/04/09 *****
+
+src/game/*:
+    - Continued work on piece placement, behavior rules, selection frame and ground substitutes.
+
+src/game/impl/guipiecelist.c:
+    - Added list scrolling (wheel scrolling, mouse following and edge scrolling).
+
+***** 2006/04/08 *****
+
+src/core/impl/var.c:
+    - Optimized array seeking (Var_getArrayElemByName).
+
+src/game/impl/behavior.h:
+    - Started Behavior and BehaviorControl objects.
+
+***** 2006/04/07 *****
+
+dist:
+    - Finished new packaging system.
+
+src/game/impl/selection.h:
+src/game/impl/selection.c:
+    - New selection module.
+
+src/game/impl/world.c:
+    - Started management of ground connexity.
+    - Used the system of diffs copied from pieces module.
+
+src/game/impl/droprules.c:
+    - Completed 'denyground' and 'needground' rules.
+
+***** 2006/04/06 *****
+
+SConstruct:
+    - Modified rules to build easily under posix and win32 platforms.
+
+***** 2006/04/02 *****
+
+src/game/*:
+    - Continued work on network synchro (piece diffs...).
+
+src/game/impl/range.h:
+src/game/impl/range.c:
+    - Added range module for range displaying.
+
+src/graphics/impl/particle.c:
+    - Fixed particles being deleted both by Particle_del and GLEVENT_DELETE event.
+
+***** 2006/03/31 *****
+
+src/game/impl/register.c:
+    - Completed insertions.
+
+***** 2006/03/30 *****
+
+src/game/impl/world.c:
+    - Fixed diff packet being deleted before ground clearing on uninit, causing segfault.
+
+src/game/impl/register.c:
+    - Fixed registerSetNbPlayers and registerSetWorldSize using the size of the 'Register' pointer
+        rather than the size of the 'pv_Register' structure for reallocing, causing segfault.
+
+***** 2006/03/27 *****
+
+src/game/impl/register.c:
+    - Register module implementation.
+
+***** 2006/03/26 *****
+
+src/game/impl/types.h:
+src/game/impl/pieces.h:
+src/game/impl/pieces.c:
+src/game/impl/game.c:
+    - Added pieces management.
+
+src/gui/*:
+src/game/*:
+    - Moved GuiWidget outside 'internal'.
+    - Moved sidepanel to guipiecelist inside 'game'.
+
+src/game/impl/register.h:
+    - New register specification (sections, iterators...).
+
+***** 2006/03/25 *****
+
+src/game/impl/types.h:
+src/game/impl/world.h:
+src/game/impl/world.c:
+src/game/impl/game.c:
+    - Added GAME_PLAYERLIST packets.
+
+***** 2006/03/19 *****
+
+src/world/env.c:
+    - Flocks are now managed by the main thread.
+
+***** 2006/03/18 *****
+
+src/core/networkpacket.h:
+src/core/impl/networkpacket.c:
+    - Added NetworkPacket_clear, NetworkPacket_newByCopy and NetworkPacket_addPacket.
+
+src/game/impl/types.h:
+src/game/impl/world.h:
+src/game/impl/world.c:
+src/game/impl/game.c:
+    - Added GAME_DIFFGROUND packets for ground synchronisation.
+
+***** 2006/03/12 *****
+
+src/game/impl/game.c:
+    - Client and server code is now based on reliable and partially thread-safe state.
+
+***** 2006/03/11 *****
+
+src/game/impl/players.h:
+src/game/impl/players.c:
+src/game/impl/game.c:
+    - Continued work on new game engine : client side.
+
+src/gui/guidialog.h:
+src/gui/guidialog.c:
+    - Added GUIDIALOG_NOBUTTON and GUIDIALOG_CANCEL dialog types.
+    - Fixed a wrong size calculation.
+
+src/core/impl/network.c:
+    - Completed client mode.
+
+***** 2006/03/05 *****
+
+src/gui/internal/guiwidget.c:
+    - Fixed a bug in automatic layer management that may screw up layers on top-level widget deleting.
+
+***** 2006/03/04 *****
+
+src/core/impl/network.c:
+    - Added sendings.
+
+src/core/ptrarray.h:
+src/core/impl/ptrarray.c:
+    - Added marking system with PtrArray_mark, PtrArray_resetMarks, PtrArray_sortMarks, PtrArray_clearMarked and PtrArray_clearMarkedFast.
+
+***** 2006/03/02 *****
+
+src/core/impl/network.c:
+    - Added connection state management.
+
+***** 2006/03/01 *****
+
+src/game/impl/players.h:
+src/game/impl/players.c:
+    - Continued work on new game engine.
+
+src/gui/guidialog.h:
+src/gui/guidialog.c:
+    - Added external identifier and data attached to each dialog.
+    - Dialogs now don't close automatically on button push.
+    - Added callback for GuiDialog_popupMsg to close it.
+
+src/gui/gui.h:
+src/gui/gui.c:
+    - Removed obsolete guiDelDialog.
+
+***** 2006/02/28 *****
+
+src/core/networkpacket.h:
+src/core/impl/networkpacket.c:
+    - Network packet are now binary data instead of Var.
+
+src/core/string.h:
+src/core/impl/string.c:
+    - Added String_replaceSized function.
+
+src/core/asyncqueue.h:
+src/core/impl/asyncqueue.c:
+    - Added asynchronous queues.
+
+***** 2006/02/18 *****
+
+src/game/impl/game.c:
+src/game/impl/gamecamera.h:
+src/game/impl/gamecamera.c:
+src/game/impl/world.h:
+src/game/impl/world.c:
+src/kernel.h:
+src/kernel.c:
+    - Continued work on new game engine.
+
+***** 2006/02/17 *****
+
+src/gui/internal/guiinput.c:
+    - Fixed GuiInput_getHeight not using borders to compute the height.
+
+src/game/*:
+    - Started to import new specification.
+
+***** 2006/02/11 *****
+
+*:
+    - Getting rid of autotools. Using a central Makefile.
+
+src/core/network.h:
+src/core/network.c:
+    - Added network module.
+
+src/gui/internal/sidepanel.h:
+src/gui/internal/sidepanel.c:
+    - Finalized work on horizontal/vertical flexibility (borders, spacing...)
+
+***** 2006/02/05 *****
+
+src/gui/internal/sidepanel.c:
+    - Added 'blended' and 'vertical' parameters.
+
+data/default:
+    - Changed sidepanel icons to move towards new GUI look.
+
+***** 2006/01/08 *****
+
+src/gui/impl/guipopupmenu.c:
+    - Fixed confusion between object and collector when receiving events that would cause crash.
+
+src/graphics/impl/gltextures.c:
+data/default:
+    - Added LOD bias for mipmapping.
+
+***** 2006/01/07 *****
+
+src/graphics/impl/glmesh.c:
+    - Added rectangle snapping on viewport to reduce edge jumping effects.
+
+src/game/game.c:
+    - Don't display flat selection rectangles.
+
+***** 2005/12/28 *****
+
+src/core/types.h:
+src/core/core.h:
+src/core/impl/core.c:
+    - Replaced core events by a full messaging system.
+
+***** 2005/12/23 *****
+
+src/gui/internal/guiwidget.h:
+src/gui/internal/guiwidget.c:
+    - Fixed mouse and keyboard event processing always returning TRUE.
+    - Fixed mouse position for sub-children.
+    - Fixed a possible crash when clicking on some widgets because 'alt' field was negative (and so caused the autolevel thing).
+
+src/gui/internal/guibutton.c:
+src/gui/internal/guiinput.c:
+src/gui/worldmap.c:
+    - Fixed returned values of the down event callback.
+
+src/graphics/graphics.c:
+    - Mouse events can now be hold by the background, thus avoiding unexpected drag events forwarding to objects.
+
+src/gui/internal/menubar.c:
+    - Clear all menus when clicking on an item.
+
+src/tools/fonct.c:
+    - Fixed rnd_float not returning a correct range of floats.
+
+src/graphics/impl/effects.c:
+    - Bolt forking.
+
+***** 2005/12/22 *****
+
+src/gui/internal/guidisplay.h:
+src/gui/internal/guidisplay.c:
+    - New object.
+
+src/gui/internal/guiwidget.h:
+src/gui/internal/guiwidget.c:
+    - Forward GLEVENT_DRAW too.
+
+data/default:
+    - New default font.
+
+***** 2005/12/18 *****
+
+src/gui/internal/sidepanel.h:
+src/gui/internal/sidepanel.c:
+    - Now uses GuiLayout.
+    - Added some things that were missing.
+
+src/graphics/graphics.c:
+    - Fixed mouse events being passed to objects depending on the event's x and y fields, which was wrong
+        for control events.
+
+***** 2005/12/17 *****
+
+src/gui/guilayout.h:
+src/gui/guilayout.c:
+src/gui/gui.h:
+src/gui/gui.c:
+    - Separated and improved layout system.
+
+***** 2005/12/10 *****
+
+src/tools/fonct.h:
+src/tools/fonct.c:
+    - Added rnd_float.
+
+src/world/internal/thunderbolts.h:
+src/world/internal/thunderbolts.c:
+    - Added electric bolt effect.
+
+src/graphics/impl/effects.c:
+    - Recursive drawing algorithm for electric bolts.
+
+src/gui/internal/sidepanel.h:
+src/gui/internal/sidepanel.c:
+    - Rewrited sidepanel code.
+    - Now using a picture with all available entity pictures.
+    - Now using ResCode system.
+
+src/graphics/glsurface.c:
+    - Fixed GlSurface_doBlit not acting as expected because SDL needs a real clip rectangle to clip the destination.
+
+***** 2005/12/09 *****
+
+src/graphics/impl/impl.h:
+src/graphics/impl/graphics.c:
+src/graphics/effects.h:
+src/graphics/impl/effects.c:
+    - Started electric bolt effect.
+
+***** 2005/12/05 *****
+
+src/*:
+    - Generalized use of the new ResCode system.
+
+***** 2005/12/03 *****
+
+src/gui/guitexture.c:
+    - Fixed border cropping when the rectangle is smaller than the borders.
+    - Added precalc for tiled parts.
+    - Optimized rendering of parts filled with a plain color.
+
+src/game/game.c:
+    - Resize the selection frame by increments.
+
+***** 2005/12/01 *****
+
+src/game/game.c:
+    - Removed the selection frame size limit.
+
+src/gui/guitexture.h:
+src/gui/guitexture.c:
+    - Made the structure private.
+    - Added ResCode to GuiTexture_set.
+
+src/core/types.h:
+    - Added ResCode type to return a code indicating success or an error combination.
+
+src/tools/varvalidator.h:
+src/tools/varvalidator.c:
+    - Added ResCode to VarValidator_validate.
+
+src/core/shell.h:
+src/core/impl/shell.c:
+    - Remove the error stack.
+
+################################################################################
+***** 2005/11/27 *****
+    Version 0.15.1 released.
+################################################################################
+
+***** 2005/11/26 *****
+
+src/graphics/impl/opengl.h:
+src/graphics/impl/opengl.c:
+src/graphics/impl/graphics.c:
+src/graphics/impl/glmeshpart.c:
+    - Fixed mesh blending by adding a per-part 'blended' parameter.
+    - Blended 3D objects are now z-zorted.
+
+src/graphics/impl/graphics.c:
+    - Update the screen before and after loading picture is drawn.
+
+src/graphics/impl/opengl.c:
+    - Reload state OpenGL commands (like glBlendFunc, hints...) on screen resizing.
+
+***** 2005/11/24 *****
+
+src/graphics/impl/camera.c:
+    - Restored world limits.
+
+src/gui/worldmap.c:
+    - Fixed tooltip translation.
+
+src/graphics/impl/keyboard.c:
+    - Fixed emergency keys.
+
+***** 2005/11/20 *****
+
+src/gui/guidialog.c:
+    - Reposition dialogs when screen size changed.
+    - Start position is cascaded.
+
+src/gui/internal/guipopupmenu.c:
+    - Menus are above dialogs.
+
+src/gui/internal/guiwidget.c:
+    - Fixed GLEVENT_DELETE not being forwarded to the holder correctly.
+
+src/game/internal/player.c:
+    - Made the ghost object red after a piece is dropped.
+
+***** 2005/11/19 *****
+
+src/game/internal/entity.h:
+src/game/internal/piece.h:
+src/game/internal/piece.c:
+    - Support for blended (z-sorted) pieces.
+
+src/graphics/impl/particle.h:
+src/graphics/impl/graphics.h:
+src/graphics/impl/opengl.h:
+src/graphics/impl/opengl.c:
+src/graphics/impl/camera.c:
+src/graphics/impl/impl.h:
+    - Restored particle system.
+    - Particles now face the camera.
+
+src/gui/internal/guiwidget.h:
+src/gui/internal/guiwidget.c:
+src/gui/gui.c:
+src/gui/guidialog.c:
+    - Dialog layers are now automatically managed; a dialog can be raised by clicking on it.
+
+***** 2005/11/18 *****
+
+src/graphics/impl/graphics.c:
+src/graphics/impl/gl3dobject.c:
+src/graphics/impl/glmesh.c:
+    - Control points are now checked when the object's rectangle is regularly asked.
+
+src/game/game.c:
+    - New selection frame using a GuiTexture.
+
+src/core/impl/core.c:
+    - Preferences are now cleared when the version number changed.
+
+***** 2005/11/17 *****
+
+src/graphics/impl/graphics.c:
+src/graphics/impl/gl2dobject.c:
+    - Restored 2D sorting.
+
+src/graphics/impl/graphics.c:
+    - Restored loading picture.
+
+src/gui/internal/guitooltip.c:
+    - Fixed tooltips.
+
+src/core/impl/reader.c:
+    - Fixed a shell error stack underrun.
+
+***** 2005/11/12 *****
+
+src/graphics/impl/cursor.c:
+src/game/internal/gamecamera.c:
+    - Restored edge scrolling.
+    - Restored cursor selection.
+    - Added 'arrow' keys for scrolling and pageup/pagedown for zooming.
+
+src/graphics/impl/glmesh.c:
+src/graphics/impl/graphics.c:
+    - Feedback is only done when needed.
+
+***** 2005/11/10 *****
+
+src/graphics/impl/glmesh.c:
+    - Added control points with OpenGL feedback mode (can be used for selection and visibility).
+    - Objects with all control points outside the viewport are not drawn.
+
+src/graphics/gl3dobject.h:
+src/graphics/impl/gl3dobject.c:
+    - Added rect field and _getRect() (rectangle occupied on screen by the control points).
+
+data/default:
+    - Added workshop entity.
+
+***** 2005/11/06 *****
+
+src/graphics/impl/gltextures.h:
+src/graphics/impl/gltextures.c:
+    - Rewritten textures manager.
+    - It is now more independent and handle making parts for exact textures.
+    - Textures are automatically reloaded and GLEVENT_TEXTURE is not needed anymore.
+
+src/graphics/impl/gl2dobject.c:
+src/graphics/impl/glmeshpart.c:
+    - Switched to the new textures system.
+
+src/gui/internal/guiwidget.c:
+    - Fixed top-level widgets always relinking to the Gl2DObject in GuiWidget_setRect
+        even when they were not resized.
+
+***** 2005/11/05 *****
+
+src/gui/worldmap.c:
+    - Converted to widget system.
+
+***** 2005/11/03 *****
+
+src/gui/gui.h:
+src/gui/gui.c:
+    - Replaced GuiScreenLayout by a more functional and generic GuiLayout.
+
+***** 2005/11/02 *****
+
+src/graphics/impl/keyboard.h:
+src/graphics/impl/keyboard.c:
+src/game/internal/gamecamera.h:
+src/game/internal/gamecamera.c:
+    - New files.
+
+src/game/internal/player.c:
+    - When a local player is added, the camera is centered on his island.
+
+src/graphics/impl/graphics.c:
+src/graphics/impl/opengl.h:
+src/graphics/impl/opengl.c:
+    - Added ghost objects.
+
+src/world/internal/thunderbolt.c:
+src/world/internal/skybox.c:
+    - A lightning illuminate directly the skybox object with transition effects.
+
+***** 2005/11/01 *****
+
+data/default:
+    - Updated meshes animations to new system.
+
+src/graphics/impl/gl3dobject.c:
+    - Completed parameters animation (color, pos and angle transitions).
+
+src/variables/*:
+    - Moved ptrarray.h and ptrarray.c in core folder.
+    - Moved varvalidator.h and varvalidator.c in tools folder.
+
+src/gui/worldmap.c:
+    - Restored camera tracking.
+
+src/graphics/impl/input.c:
+src/graphics/impl/cursor.h:
+src/graphics/impl/cursor.c:
+    - New and better externalized cursor management.
+
+***** 2005/10/31 *****
+
+src/graphics/light.c:
+src/graphics/light.h:
+    - Lights are now stored in a static array with a size limited by OpenGL implementation.
+    - Added lightSetFromVar.
+
+src/graphics/color.h:
+src/graphics/color.c:
+    - Added GlColorRGB_makeFromVar and GlColorRGB_MAKE.
+
+***** 2005/10/27 *****
+
+src/world/clouds.c:
+src/world/clouds.h:
+    - Files removed.
+
+src/graphics/impl/graphics.c:
+src/graphics/impl/glmesh.c:
+src/graphics/impl/glmeshpart.c:
+    - Restored 3D objects.
+    - New animation system.
+
+src/world/skybox.c:
+    - Skybox now uses mod data for the mesh and can be animated.
+
+src/tools/anim.c:
+    - Added Anim_setTrackFromVar.
+
+src/core/impl/core.c:
+    - Fixed a bug that would launch a thread before its environment was corretly set.
+
+***** 2005/10/26 *****
+
+data/default:
+    - Added Portuguese translation.
+
+src/core/impl/comp.c:
+    - Added Portuguese autodetection for win32.
+
+src/tools/anim.h:
+src/tools/anim.c:
+    - Added animation name and comparison function.
+
+***** 2005/10/23 *****
+
+src/graphics/impl/graphics.c:
+    - Added 3D groups management.
+    - Fixed collectors receiving state events even if they don't want to.
+
+***** 2005/10/22 *****
+
+src/tools/anim.c:
+    - Added linear interpolation.
+    - Added unlinking.
+
+src/graphics/impl/gl2dobject.c:
+    - Added transition effect for position and color.
+
+src/gui/internal/guiwidget.c:
+src/gui/internal/guipopupmenu.c:
+    - Added appear effect for top-level widgets and menus.
+
+src/graphics/impl/gl2dobject.c:
+src/graphics/impl/graphics.c:
+    - Adding and deleting objects is delayed to avoid messing with arrays.
+    - Deleting objects that own a Gl2DObject should now be done on GLEVENT_DELETE
+        to ensure no more events will be received and the linked surface won't
+        be used anymore.
+
+src/graphics/impl/graphics.c:
+src/graphics/impl/gl2dobject.c:
+src/gui/internal/guiwidget.c:
+src/gui/internal/guipopupmenu.c:
+src/gui/guidialog.c:
+    - New event strategy.
+    - Event bugfixes.
+
+***** 2005/10/21 *****
+
+src/tools/anim.h:
+src/tools/anim.c:
+    - New generic animation system.
+
+src/graphics/*:
+    - Fixed several integration bugs.
+
+src/variables/ptrarray.h:
+src/variables/ptrarray.c:
+    - Added foreach functions with data.
+
+***** 2005/10/17 *****
+
+src/graphics/impl/light.c:
+    - Lights are only updated when needed.
+    - Added more specular and ambient colors and spot/attenuation parameters.
+
+***** 2005/10/15 *****
+
+src/graphics/impl/gl3dobject.c:
+src/graphics/impl/color.c:
+src/graphics/impl/glmesh.c:
+src/graphics/impl/glmeshpart.h:
+src/graphics/impl/glmeshpart.c:
+src/graphics/impl/particle.c:
+src/graphics/impl/light.c:
+    - Continued integration.
+
+***** 2005/10/13 *****
+
+src/graphics/impl/camera.c:
+src/graphics/impl/glscreen.h:
+src/graphics/impl/glscreen.c:
+src/graphics/impl/cursor.h:
+src/graphics/impl/cursor.c:
+src/graphics/impl/gltextures.c:
+[...]
+    - Continued integration.
+
+***** 2005/10/11 *****
+
+src/graphics/impl/gliterator.c:
+    - Continued integration.
+
+***** 2005/10/09 *****
+
+src/graphics/impl/gl2dobject.c:
+src/graphics/impl/gltextrender.c:
+    - Continued integration.
+
+src/tools/anim.h:
+    - Started specification.
+
+***** 2005/10/08 *****
+
+src/graphics/*:
+    - Almost definitive new specification.
+
+src/game/game.c:
+src/game/internal/player.h:
+    - Updated to the new graphics specification.
+
+***** 2005/10/01 *****
+
+src/sound/sound.h:
+src/sound/sound.c:
+    - Changed GlCoord for Sound3DCoord (to avoid physical dependency to 'graphics').
+
+src/graphics/*:
+    - Started to import graphics_new specification.
+
+src/graphics/impl/glsurface.c:
+    - Now use a pv_GlSurface structure that contains the SDL_Surface*.
+    - Bresenham algorithms now use a GlColor* to wander through surfaces.
+
+***** 2005/09/27 *****
+
+src/graphics_new/*:
+    - New engine specification:
+        light.h         created
+
+***** 2005/09/25 *****
+
+src/graphics_new/*:
+    - New engine specification:
+        gl3dobject.h    added groups
+        graphics.h      added 3d groups and event collectors
+        input.h         created
+
+***** 2005/09/24 *****
+
+data/default:
+    - Added new unit: Sun Cannon.
+
+src/graphics_new/*:
+    - New engine specification:
+        gl2dobject.h    updated
+        gl3dobject.h    created
+
+***** 2005/09/22 *****
+
+src/world/env.c:
+src/world/internal/thunderbolt.h:
+src/world/internal/thunderbolt.c:
+src/world/internal/flocking.h:
+src/world/internal/flocking.c:
+    - Separated threads for flocking and thunder.
+    - Thunder's thread is now a slot inside main thread. This fixes a graphical bug
+        when light was added or removed during the frame drawing.
+
+***** 2005/09/13 *****
+
+src/graphics/graphics.h:
+    - Changed include to "SDL_mutex.h" from "SDL/SDL_mutex.h".
+
+src/graphics_new/*:
+    - Continue specification:
+        gltextrender.h
+
+***** 2005/09/06 *****
+
+src/gui/internal/guiscrollbar.h:
+src/gui/internal/guiscrollbar.c:
+    - Added slider button and background.
+
+src/gui/internal/guitheme.h:
+    - Added GUITHEME_SCROLLBAR.
+
+src/gui/internal/guiwidget.c:
+    - Fixed a EVENT_REALLOC being sent to children even when they weren't resized
+        (because of GuiWidget_setChildRect=>GuiWidget_setRect).
+
+src/core/core.h:
+src/core/impl/core.c:
+src/world/env.c:
+src/graphics/internal/input.c:
+    - In coreThreadCreate, the ID is returned by the mean of a volatile argument pointer. It
+        avoids the thread being launched before ID was correctly set in the calling module.
+
+***** 2005/09/04 *****
+
+src/gui/internal/guibutton.c:
+    - Added pushed state.
+    - Fixed EVENT_MOUSE_BUTTONRELEASED not being treated when outside the widget.
+
+src/gui/internal/guitheme.h:
+    - Added GUITHEME_BUTTONPUSHED.
+
+src/gui/internal/guitooltip.c:
+    - Tooltips now disappear on mouse over.
+
+src/graphics/gltextrender.c:
+    - GlTextRender_directRender can now render multiline strings.
+
+src/core/reader.c:
+    - Added support for special chars '\n', '\r' and '\t'.
+
+***** 2005/09/01 *****
+
+src/graphics_new/*:
+    - Continue specification:
+        gliterator.h
+
+***** 2005/08/31 *****
+
+src/graphics_new/*:
+    - Started new graphical engine specification:
+        graphics.h
+        types.h
+        gl2dobject.h
+        glsurface.h
+
+################################################################################
+***** 2005/08/24 *****
+    Version 0.14.2 released.
+################################################################################
+
+***** 2005/08/24 *****
+
+src/gui/internal/guibutton.c:
+    - Fixed GuiButton doing things after sending an event upwards, causing sometimes a
+        segfault when this up event leaded to the destruction of the button.
+
+src/gui/gui.h:
+src/gui/gui.c:
+src/gui/guidialog.c:
+    - Added guiDelDialog as a temporary fix to the GuiDialog deleting problem.
+
+***** 2005/08/23 *****
+
+src/core/var.h:
+src/core/impl/var.c:
+    - Added Var_insertIntoArray to add variables to arrays without copying them.
+
+src/core/impl/string.c:
+    - Fixed a memleak in String_newByCopy.
+
+src/game/internal/droprules.c:
+    - Fixed a memleak: 'allowed_entities' were never freed.
+
+src/core/impl/i18n.c:
+    - Fixed a memleak in datasCallback: string 's' was never freed.
+
+src/system/mem.c:
+    - Searching pointers backwards improved debug speed.
+
+src/core/impl/core.c:
+    - Fixed several memleaks.
+
+src/variables/varvalidator.c:
+    - Fixed a memleak (Var_new was called twice).
+
+***** 2005/08/22 *****
+
+src/core/reader.h:
+src/core/impl/reader.c:
+    - Modified Reader to read tokens directly (ints, floats, strings and names).
+
+src/core/impl/var.c:
+    - Adapted to the new Reader.
+
+src/core/impl/impl.c:
+src/core/impl/shell.c:
+    - Shell function are now parsed by a Reader.
+
+src/tools/parser.h:
+src/tools/parser.c:
+    - This obsolete Parser was deleted, supplanted by the new Reader.
+
+data/default:
+    - Reencoded music and resized textures, dividing datas size by 2.
+
+***** 2005/08/21 *****
+
+src/core/reader.h:
+src/core/impl/reader.c:
+    - New linear reader with pre-parsing capabilities.
+
+src/core/var.h:
+src/core/impl/var.c:
+    - Moved into the core.
+    - Added Var_newByCopy function.
+    - Var_new now takes no argument at all (as setting name and type can be done by
+        appropriate functions).
+    - Links aren't limited to array anymore.
+    - Now using Reader to parse variables in one pass.
+
+src/graphics/glrect.c:
+    - Using VarValidator to load data.
+
+src/core/impl/core.c:
+    - Initialize shell before finding datas (because this can print things to the shell).
+
+src/variables/varvalidator.c:
+    - Shell error stack message has been reduced to the variable name. The whole variable
+        is given only in debug mode.
+
+src/graphics/internal/glmeshpart.c:
+    - Shell error stack message has been reduced to the variable name.
+
+***** 2005/08/20 *****
+
+src/game/internal/entity.c:
+    - Entity's name is now taken from the variable name rather than a 'name' field.
+    - Added an activation system for the rules. The problem was they were created
+        before all entities were created, thus risking a segfault when building
+        entity lists.
+
+################################################################################
+***** 2005/08/20 *****
+    Version 0.14.1 released.
+################################################################################
+
+***** 2005/08/19 *****
+
+src/game/game.c:
+    - Selection particule's size now depends on the piece size.
+    - Range particules are centered on the piece, whatever its size.
+
+***** 2005/08/12 *****
+
+src/game/game.c:
+    - Static pieces register their presence in all tiles covered by their size.
+
+src/game/internal/entity.h:
+src/game/internal/entity.c:
+    - Added 'width' and 'height' fields.
+
+***** 2005/08/11 *****
+
+src/gui/internal/guitooltip.c:
+    - Tooltips can be cancelled by a mouse click.
+
+src/game/game.c:
+    - Changed range particles altitude to 0.1
+
+src/kernel.c:
+    - Removed 'newgame' shell function (starting a game is now handled by game dialogs).
+
+src/gui/internal/gamedialogs.h:
+src/gui/internal/gamedialogs.c:
+    - Started 'dialogs' core module for game dialogs.
+    - Added 'newgame' dialog.
+
+src/gui/guidialog.h:
+src/gui/guidialog.c:
+    - Added label to text input fields.
+    - Made GuiDialog_del public.
+    - Added the dialog pointer to the callback arguments.
+
+src/gui/internal/guiinput.h:
+src/gui/internal/guiinput.c:
+    - Added GuiInput_getHeight function.
+
+src/core/core.h:
+src/core/impl/core.c:
+    - Started platform compatibility file (mainly to avoid conflicting types with
+        <windows.h> header).
+    - Moved the guessLocalLanguage function here.
+    - Added compErrorMessage (works only on win32 platforms for now).
+
+***** 2005/08/09 *****
+
+src/gui/internal/guiwidget.c:
+    - Fixed REALLOC event not always been sent to a newly attached child.
+
+src/gui/guidialog.h:
+src/gui/guidialog.c:
+    - Added support for input fields (returned by the callback in a named array).
+    - Added text input field.
+
+data/default:
+    - Changed the energy generator.
+
+***** 2005/06/22 -> 2005/08/09 *****
+
+src/core/core.c:
+    - Win32 preferences file is now put in current directory if APPDATA environment
+        variable isn't found, rather than at C: root.
+    - Added corePause() and coreResume()
+    - Added core events
+    - Data loading is now handled by the core
+
+src/game/game.c:
+    - Placement stops or not after having dropped a piece.
+    - Selection is now done by the game register.
+
+src/game/internal/droprules.c:
+    - New object.
+
+src/game/internal/entity.c:
+    - Added droprules and 'stay in drop mode'.
+    - Added static and selectable features.
+
+src/game/internal/input.c:
+    - Non critical inputs are frozen while data loading.
+
+src/game/internal/player.c:
+    - Added droprules support.
+    - Added support for red ghost mode when a piece can't be dropped.
+
+src/game/internal/register.c:
+    - New module.
+
+src/graphics/gl3dobject.c:
+    - Added ghost mode.
+
+src/graphics/graphics.c:
+    - Made selection_event static, fixing event being produced each cycle.
+
+src/graphics/glmeshpart.c:
+    - Better part loading from file.
+    - Added flat-shaded and two-sided parts support.
+    - Added normals and texcoords modes.
+
+src/graphics/internal/input.c:
+    - Temporary restored wheel zooming.
+
+src/gui/internal/sidepanel.c:
+    - Can now quit placement mode by clicking on the selected entity.
+
+src/gui/worldmap.c:
+    - Camera field of vision is displayed with a cone.
+
+
+################################################################################
+***********************
+* 0.13.1 (2005/06/22) *
+********************************************************************************
+* src/core/impl/core.c:
+*       - Added threads system with slots.
+*
+* src/core/impl/shell.h:
+*       - shellPrintf arguments are now tested against format by compiler when possible.
+*
+* src/game/game.c:
+*       - Selection particle.
+*       - Range particle.
+*
+* src/game/internal/piece.c:
+*       - New object for pieces dropped.
+*
+* src/graphics/graphics.c:
+*       - Fixed selection button getting stuck.
+*       - Switched to new thread system.
+*       - Fixed pieces being dropped even over a 2d object.
+*
+* src/graphics/internal/glmeshanim.c:
+*       - Added animation controller settings for animations with 0 or 1 frame.
+*
+* src/graphics/internal/glmeshpart.c:
+*       - Normals normalization.
+*
+* src/graphics/internal/input.c:
+*       - Fixed fullscreen preference being discarded at loading by the window creation throwing a resize event.
+*       - Switched to the new thread system.
+*
+* src/graphics/internal/opengl.c:
+*       - Transparent objects don't write to depth buffer anymore (but still aren't z-sorted!)
+*
+* src/graphics/internal/particle.c:
+*       - New simple particle system.
+*
+* src/gui/dialog.c:
+*       - Dialog moving.
+*
+* src/gui/gui.c:
+*       - Added a dialog to confirm exiting.
+*
+* src/gui/worldmap.c:
+*       - The map now moves smoothly towards the point aimed by the camera.
+*
+* src/gui/internal/guitooltip.c:
+*       - Tooltips aren't destroy on mouse over anymore.
+*       - Use a main thread slot to temporize tooltip showing and hiding.
+*
+* src/sound/sound.c:
+*       - Fixed compilation problems when SDL_mixer wasn't found.
+*
+* src/system/mem.c:
+*       - Added a mutex to protect the debugging array.
+*
+* src/variables/var.c:
+*       - Modified method to get the variable representation in a string.
+*
+* src/world/env.c:
+*       - Switched to new thread system.
+*
+* src/world/ground.c:
+*       - Bridges aren't handled here anymore, they are only considered as entities.
+*
+* data/default:
+*       - New background and ambient colors.
+*
+********************************************************************************
+
+
+***********************
+* 0.12.1 (2005/04/23) *
+********************************************************************************
+* src/main.c:
+*       - Fixed data path finding.
+*
+* src/kernel.c:
+*       - Local language is auto-detected if not specified by command line.
+*       - Popup an error message if requested mod wasn't found on new game.
+*
+* src/core/*:
+*       - Grouped functionalities in a new core engine : shell functions, preferences and ressources.
+*
+* src/core/impl/shell.c:
+*       - Now uses a pretty dynamic String_vprintf function rather than a big static buffer for printf.
+*
+* src/game/internal/entity.c:
+*       - New Entity object.
+*
+* src/game/internal/player.c:
+*       - New Entity object.
+*
+* src/graphics/glsurface.c:
+*       - GlSurface_doBlit can't change rectangle parameters anymore.
+*       - Removed hardware surface support (since it needs a good locking system that isn't implemented yet).
+*
+* src/graphics/glrect.c:
+*       - Added GlRect_cropBorders function.
+*
+* src/graphics/gltextures.c:
+*       - Material parameters attached to the texture.
+*
+* src/graphics/input.c:
+*       - Mouse events coordinates are clipped to the screen rectangle (simplifies menubar clicking).
+*       - Windowed mode resize event is handled.
+*       - FPS was limited to 50 by the input timer when NO_EVENT_QUEUE was defined.
+*
+* src/graphics/internal/cursor.c:
+*       - Cursor module replaces the heavy input/InputCursor shared mouse management.
+*       - Added acceleration deadzone.
+*       - Added 'push' edge mode.
+*
+* src/graphics/internal/glscreen.c:
+*       - Don't quit if the screen surface creation failed, try the standard one instead.
+*       - Video modes available in fullscreen are listed in SHELL_INFO at init.
+*       - Resizable windowed mode.
+*
+* src/gui/guidialog.c:
+*       - New module.
+*
+* src/gui/worldmap.c:
+*       - Added left mouse clicking to move the point looked by the camera.
+*       - Fixed the setPlot function writing outside the drawing area.
+*
+* src/gui/internal/guibutton.c:
+*       - New object.
+*
+* src/gui/internal/guiinput.c:
+*       - Switched to GuiTheme system.
+*
+* src/gui/internal/guipopupmenu.c:
+*       - Restricted to static menus (not loaded on the fly anymore).
+*       - Switched to GuiTheme system.
+*
+* src/gui/internal/guiscrollbar.c:
+*       - Added buttons and simple tick.
+*
+* src/gui/internal/guitexture.c:
+*       - Switch from file loading to var loading.
+*
+* src/gui/internal/guitheme.c:
+*       - New module.
+*
+* src/gui/internal/guitooltip.c:
+*       - New module.
+*
+* src/gui/internal/guiwidget.c:
+*       - Added children redrawing.
+*       - Gotten rid of the too complex (and dangerous) 'allocrect' system.
+*           Children are now fully placed by their parent.
+*       - Drawing surfaces are initialized with a non transparent black.
+*       - Mouse events are forwarded to the children then to the holder if no child got it.
+*       - Redrawing isn't done on real time but only when the top-level is drawn on screen.
+*       - Better mouse and keyboard events handling.
+*       - Added tooltip support.
+*
+* src/mod/gamemod.c:
+*       - Added loading picture.
+*
+* src/system/mem.c:
+*       - Replaced the GArray system for debug by a standard array.
+*
+* src/tools/completion.c:
+*       - New completion tool.
+*
+* src/variables/ptrarray.c:
+*       - Fixed RemoveRange functions.
+*
+* src/variables/string.c:
+*       - Replaced the GString system with a builtin system.
+*       - Optimized String_cmp function.
+*
+* src/variables/var.c:
+*       - Variable name can't be NULL anymore.
+*       - Hidden data structure for Var.
+*
+* src/variables/varvalidator.c:
+*       - Unnamed and unexpected fields are now removed.
+*
+* src/world/ground.c:
+*       - New ground generation based on player adding and world subdivision in four quarters.
+*
+********************************************************************************
+
+
+***********************
+* 0.11.1 (2005/02/23) *
+********************************************************************************
+* src/main.c:
+*       - No more break on win32 platforms if environment variable APPDATA isn't found, using "C:\" instead.
+*
+* src/game/game.c:
+*       - Added game engine.
+*
+* src/graphics/camera.c:
+*       - Static fustrum to avoid bad clipping effects.
+*
+* src/graphics/gl2dobject.c:
+*       - Fixed fake objects being shown or hidden at pre/post-load.
+*
+* src/graphics/gltextrender.c:
+*       - New secure multiline text rendering system (replaces old GlFont system).
+*       - Removed shadow and bump options for fonts. They weren't fast enough and
+*           too complicated to implement in the new multiline system.
+*
+* src/graphics/input.c:
+*       - Fixed a cursor change bug (input thread could attempt to access a deleted cursor).
+*       - Fixed a possible crash due to bad control limitations.
+*       - Added code to know the grid cell (on the ground plane) which is pointed by the cursor at any time.
+*
+* src/graphics/internal/glmeshanim.c:
+*       - Correct loop management.
+*
+* src/gui/internal/guioutput.c:
+*       - Added GuiOutput object (used by guishell.c).
+*
+* src/gui/internal/guiscrollbar.c:
+*       - Added GuiScrollbar object.
+*
+* src/gui/internal/guiwidget.c:
+*       - Auto-focus on the first child available.
+*
+* src/gui/internal/sidepanel.c:
+*       - Basic entity support.
+*
+* src/shell/shell.c:
+*       - Error stack is printed again in full after a pop.
+*
+* src/sound/sound.c:
+*       - Fixed a bug while changing number of sample channels.
+*       - Fixed a memleak (samples weren't deleted between games).
+*       - Added common channel playing.
+*
+* src/system/mem.c:
+*       - Improved memory allocation debug (handles overlapping allocations detection).
+*
+* src/variables/varvalidator.c:
+*       - Fixed resolved array's name changed in the file causing crash.
+*
+* src/world/ground.c:
+*       - Added bridges.
+*
+********************************************************************************
+
+***********************
+* 0.10.1 (2004/12/15) *
+********************************************************************************
+* src/main.h:
+*       - Changed asserts syntax.
+*       - Added ASSERT_MAINTHREAD to check that the current thread is the main one.
+*
+* src/graphics/glmesh.c:
+*       - Meshes are now splitted in mesh parts.
+*
+* src/graphics/gl2dobject.c:
+*       - Added DEBUG_TEX support.
+*
+* src/graphics/glfont.c:
+*       - Fixed a bug in extended charset (128->255).
+*
+* src/graphics/gltextures.c:
+*       - Improved debugging.
+*       - Better texture tracking.
+*
+* src/graphics/graphics.c:
+*       - 2D textures (for object parts) are now correctly deleted at preload (beginning of mod loading).
+*       - Only 2d objects that catch key events can receive keyboard focus.
+*       - An object will catch all mouse events while holding a mouse button.
+*       - Hidden objects can't receive mouse and keyboard events anymore.
+*
+* src/graphics/input.c:
+*       - Middle mouse button is now used for rotating (allow mouse only camera control).
+*       - Scrolling and zooming speeds now depend on the camera distance.
+*
+* src/graphics/internal/glmeshanim.c:
+*       - Parts can be animated by the use of keyframes.
+*
+* src/graphics/internal/glmeshpart.c:
+*       - Use OpenGL arrays to render parts faster.
+*
+* src/gui/internal/guiinput.c:
+*       - Changed to GuiWidget system.
+*
+* src/gui/internal/guishell.c:
+*       - Changed to GuiWidget system.
+*
+* src/gui/internal/guiwidget.c:
+*       - Generalized GUI management by the use of widgets.
+*
+* src/shell/shell.c:
+*       - Added an error stack to make pretty error messages (allow to discriminate the location).
+*       - Don't duplicate completion list entries.
+*
+* src/sound/sound.c:
+*       - Added callbacks on reserved channels (replace global monitors).
+*       - Added reserved channel's spatialization (3d or stereo).
+*
+* src/system/mem.c:
+*       - Added DEBUG_MEMPRINT (per-file use).
+*       - Added size tracking (except for surfaces, sound chunks and strings).
+*
+* src/tools/i18n.c:
+*       - Started internationalization support.
+*
+* src/variables/common.c:
+*       - Removed temporaries because their use was dangerous.
+*
+* src/variables/ptrarray.c:
+*       - Added fake array copies (useful to call a 'foreach' with a function that may remove some elements).
+*
+* data/default:
+*       - Partial french (fr) translation.
+*       - Modified background.
+*
+********************************************************************************
+
+
+**********************
+* 0.9.1 (2004/11/01) *
+********************************************************************************
+* src/main.h :
+*       - Added ASSERT_WARN to assert without returning on failure.
+*
+* src/main.c :
+*       - On win32, preferences file is now stored within the folder pointed by the environment variable 'APPDATA'.
+*
+* src/kernel.c :
+*       - Added a pause/resume function (that pauses the game but not the graphical engine).
+*
+* src/graphics/camera.c :
+*       - Camera now uses a validation system to avoid being modified during OpenGL drawing.
+*       - Speeded up rendering process by separating camera and object transformations
+*            (through the OpenGL matrix stack).
+*
+* src/graphics/gl2dobject.c :
+*       - Rewrited 'state' system.
+*       - Added show/hide facility.
+*
+* src/graphics/glfont.c :
+*       - Replaced GHashTable by PtrArray.
+*
+* src/graphics/glmesh.c :
+*       - Added mesh loading from file.
+*       - Added normal vectors support.
+*       - Fixed a bug in unlinked texture finding.
+*
+* src/graphics/glmesh.c :
+*       - Fixed a negative size bug in rectangle clipping.
+*
+* src/graphics/gltextures.c :
+*       - Replaced GL_CLAMP by GL_CLAMP_TO_EDGE (GL_CLAMP wasn't sufficient on some systems).
+*       - Separate texture wrapping in horizontal wrapping and vertical wrapping (xwrap and ywrap).
+*       - 'Normal' textures for 3D now keep the same identifier (EVENT_TEXTURE is only needed by linked textures).
+*       - Texture's maximal size is now determined by OpenGL.
+*
+* src/graphics/graphics.c :
+*       - Fixed incorrect time management that reduced the framerate.
+*       - Rendering parameters in a definition variable.
+*
+* src/graphics/light.c :
+*       - Added global lighting support.
+*
+* src/graphics/input.c :
+*       - If DEBUG_CONSTRAINTS is defined, input grabbing is prohibited instead of forcing
+*            normal mouse mode (which was saved in preferences).
+*
+* src/graphics/internal/opengl.c :
+*       - Added some shell functions to control rendering parameters.
+*       - Added DEBUG_OPENGL facilities.
+*       - Changed fog to exponential (GL_EXP2) with density factor.
+*       - Added motion blur fast emulation.
+*       - Rendering parameters in a definition variable.
+*       - The viewport can now be specified in mod datas (the 'default' intro will look the same on all screen sizes).
+*
+* src/gui/guiinput.c :
+*       - Added auto-completion support (used now for guishell).
+*
+* src/gui/worldmap.c :
+*       - Added 'path' color for roads, bridges...
+*       - The map is centered on the camera position (and so follow camera movements).
+*       - A line show the viewing line (line between the camera and the position looked-at).
+*
+* src/shell/shell.c :
+*       - Added function searching when no module name is provided.
+*
+* src/sound/sound.c :
+*       - Sound can now be disabled at runtime (with command line parameters).
+*       - If the sound device is busy, sound is disabled and the program no longer crashes.
+*       - Added samples support (loading and playing in reserved channels).
+*
+* src/tools/fonct.h :
+*       - Fixed the RAD->DEG conversion.
+*
+* src/tools/parser.c :
+*       - Added escaping character to allow for example a string included inside another string.
+*
+* src/variables/ptrarray.c :
+*       - Replaced some things based on position by iterators.
+*       - Use dichotomic algorithm for sorted searches.
+*
+* src/variables/var.c :
+*       - Fixed a bug in array variables parsing.
+*       - Fixed unnamed variable unexpected naming when loading from a file.
+*       - Fixed a possible crash in array sorting for mixed named and unnamed.
+*       - Added link array functionnality to describe an array in another file
+*           (link is done by the reference: @"name_of_file").
+*
+* src/variables/varvalidator.c :
+*       - Added a VarValidator to automatically check the fields of a named array and correct it if necessary.
+*
+* src/variables/varset.c :
+*       - The combination Var + VarValidator now replaces all Varsets.
+*
+* src/world/ground.c :
+*       - Ground shape is now loaded from mod meshes.
+*       - Added ground borders.
+*       - New generation based on seeds.
+*
+* src/world/internal/clouds.c :
+*       - Added transparent cloud layers.
+*
+* src/world/internal/flocking.c :
+*       - Boids' meshes are now described in a mod file.
+*       - Added axis multipliers to simulate planar tendencies.
+*
+* src/world/internal/thunderbolt.c :
+*       - Added environmental lightning.
+*
+********************************************************************************
+
+
+**********************
+* 0.8.1 (2004/10/04) *
+********************************************************************************
+* src/kernel.c :
+*       - Added a title to start with.
+*
+* src/graphics/input.c :
+*       - Added function keys CTRL+F1 (safe screen mode), CTRL+F2 (restart to title with "default" mod)
+*            and CTRL+F12 (exit).
+*       - Added an event queue and a thread to fill it (disabled on win32 platforms because they don't support
+*            SDL threaded events).
+*       - Left SHIFT key now controls the zoom factor.
+*       - Left SUPER key now controls the panoramic.
+*       - Key strokes are now treated on key down event and with Unicode charset.
+*       - Added key repeating.
+*       - Added right SHIFT, CTRL, SUPER and MENU keys to control the camera (ALT GR doesn't seems to work).
+*
+* src/graphics/gltextures.c :
+*       - Added linked textures to create OpenGL textures directly from surfaces.
+*
+* src/graphics/camera.c :
+*       - Zoom limits are now 5.0 and 250.0.
+*
+* src/graphics/gl3dobject.c :
+*       - Added simple rotation capabilities.
+*
+* src/graphics/gliterator.c :
+*       - Added 'up' and 'down' capabilities.
+*
+* src/graphics/glsurface.c :
+*       - Speeded up rectangle copying and moving by taking complete lines at once.
+*
+* src/graphics/internal/opengl.c :
+*       - Added wireframe capabilities for debugging.
+*       - Allowed back face culling for background objects.
+*
+* src/gui/worldmap.c :
+*       - Added a simple map to represent the whole world.
+*
+* src/gui/internal/guiinput.c :
+*       - Added an history for input boxes.
+*       - Validation automatically clears the current text, after calling the input callback.
+*
+* src/tools/fonct.c :
+*       - Fixed a bug in float reading from string for a negative number.
+*
+* src/world/skybox.c :
+*       - Skybox's X and Z moves are now proportional to a same size (to avoid moving faster in one direction).
+*       - Catch EVENT_TEXTURE events to acknowledge texture identifiers changes.
+*       - Fixed a confusion in coordinates system (to allow back face culling).
+*
+* src/world/env.c :
+*       - Started an environment module (will be used to handle the weather, animals...).
+*
+* src/world/internal/flocking.c :
+*       - Added a flocking module to simulate animals behavior (birds for instance).
+*
+* data/default :
+*       - New little font "default8" (5x8, not antialiased) used for the shell output.
+*       - New default music (copyrighted so still temporary, waiting for our own music...).
+*
+********************************************************************************
+
+
+**********************
+* 0.7.1 (2004/09/05) *
+********************************************************************************
+* NEW   : Zoom is faster with the distance
+* ADDED : Cursor acceleration
+* ADDED : Graphical shell (with input and output)
+* ADDED : Shell output logging to a file
+* SPEED : Cached menus to prevent redrawing of unchanging menus
+* FIXED : Float reading from a string sometimes used ',' instead of '.'
+* FIXED : 3D objects were not removed from the rendering queue when destroyed
+* FIXED : Data files were not open in binary mode, which caused problems on some platforms
+* FIXED : Texture are reuploaded if a screen mode change discarded them
+* FIXED : Some other platform-dependent troubles
+********************************************************************************
+
+**********************
+* 0.6.1 (2004/08/23) *
+********************************************************************************
+* NEW   : Brand new shell, recursive capable and using the new variables and parser
+* NEW   : Variables in varset can now be shell functions calls
+* NEW   : Texture parameters
+* ADDED : Camera vertical rotation (pitch)
+* ADDED : Cursor changes are smoothed (to avoid too fast changes)
+* ADDED : Better background handling (the skybox is a 2.0-sized cube with a special camera inside)
+* ADDED : Fake 2d objects, not drawn but capable of event catching (used to close menus on a click outside)
+* ADDED : Submenus handling
+* ADDED : Ground management (with full random generation, for testing)
+* ADDED : Sound engine with music support
+* ADDED : Mipmaps and trilinear filtering
+* ADDED : Framerate control
+* FIXED : Wild cursor in 'release mouse' mode for real
+* FIXED : Wrong 3D calculations due to the screen ratio
+********************************************************************************
+
+**********************
+* 0.5.1 (2004/08/15) *
+********************************************************************************
+* NEW   : Code is organized in folders with internal parts
+* NEW   : Modules and functions can now fully declare themselves into the shell
+* NEW   : Now focus on 3D game style with OpenGL rendering
+* NEW   : New abstract rendering architecture based on objects and events
+* NEW   : Variables handling is more complete and sophisticated (varsets specification changed)
+* ADDED : OpenGL rendering
+* ADDED : Monitors to watch over preferences variables
+* ADDED : Shell command reading from stdin
+* ADDED : A skybox that surrounds the world
+* ADDED : Command line parsing
+* ADDED : Many, many little things
+* FIXED : The cursor going wild in 'release mouse' mode (real and virtual cursor had an offset)
+* SPEED : Coupled iterators
+* LOST  : Software rendering
+* LOST  : Documentation on varsets and shell commands
+* LOST  : Win32 port (again...)
+********************************************************************************
+
+**********************
+* 0.4.1 (2004/06/04) *
+********************************************************************************
+* NEW   : New rendering architecture
+* NEW   : Fonts are now read from red channel of the picture (to allow greyscale pictures)
+* NEW   : Win32 binaries are maintained again (but still not really optimized)
+* NEW   : String variables in files can now have spaces
+* ADDED : OSD layers to draw things directly on screen (cursor, menus...)
+* ADDED : Two effects on fonts (pseudo-relief and shadow)
+* ADDED : Menubar entries are drawn
+* ADDED : Menus that popup on the screen (no submenus yet) with items triggering shell commands
+* FIXED : Cursors are now chosen smoothly for scrolling
+* FIXED : A severe bug in rectangle clipping
+* FIXED : When an error occurs while opening an image file, a default surface is returned.
+* FIXED : Fonts (in non-monospace mode) now have a spacing separator
+* FIXED : Some file errors on varset loading
+* FIXED : A bug in shell parser for functions with parameters
+* SPEED : Background layer is now drawn directly onto screen
+* SPEED : Only needed parts are updated on screen
+* DIST  : New own default font
+********************************************************************************
+
+**********************
+* 0.3.1 (2004/05/08) *
+********************************************************************************
+* NEW   : The source is now compliant with ANSI C specifications
+* ADDED : Internal evolutive shell based on per-module functions
+* ADDED : A menubar that stands in the top of the screen
+* ADDED : Shell messages can now be given in a formatted way (like C's printf function)
+* ADDED : Text support with mod-defined fonts (8-bit charsets, monosized)
+* ADDED : A scrolling key (left ALT key) that allows to scroll with the mouse at any location
+* ADDED : New debugging facilities
+* ADDED : Varsets can be saved again (thus, preferences file is correctly created)
+* FIXED : Some string, varset and surface memleaks
+* FIXED : A bug that crashed when the background was scrolled more than the view size
+********************************************************************************
+
+**********************
+* 0.2.1 (2004/04/17) *
+********************************************************************************
+* NEW   : Conversion to C language
+* NEW   : Massive code rewriting due to C conversion
+* ADDED : Sidepanel (that stands on the left of the screen)
+* ADDED : New cloud background
+* ADDED : Corner scrolling cursors
+* FIXED : A bug in the rectangle moving inside surfaces that caused crash
+* SPEED : Several improvements in graphical surfaces and cursors
+* DIST  : New data tree, file paths in data files are now relative to the current mod folder
+* DIST  : Datas are now installed and uninstalled correctly
+* DIST  : A data tree reference document has been added
+* LOST  : Win32 binaries aren't maintained at the moment (but the compatibility is kept in mind)
+* LOST  : Varsets saving
+********************************************************************************
+
+**********************
+* 0.1.1 (2004/03/14) *
+********************************************************************************
+* First C++ development release (not playable)
+* Internally managed cursor (with scrolling cursors on the edge of the screen)
+* Scrolling background
+* Mods implementation
+* Sloppy but compilable win32 version
+********************************************************************************

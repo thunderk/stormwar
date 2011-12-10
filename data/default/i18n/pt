@@ -1,0 +1,163 @@
+#pt = 
+[
+    [
+        #o = "World map (click to move the camera)",
+        #t = "Mapa do mundo (clicar para deslocar o ponto de vista)"
+    ],
+    [
+        #o = "Enter your command here",
+        #t = "Digite a encomenda aqui"
+    ],
+    [
+        #o = "Enter here the name of the modification you want to use.",
+        #t = "Digite aqui o nome da modificação que você quiser usar."
+    ],
+    
+    
+    
+
+    [
+        #o = "This game isn't playable yet. For testing purpose only.\n\nTo start a new game, use the game menu on the top.\n\nCamera control:\n - Scroll: Screen edges in fullscreen, map clicking, ALT + mouse move\n - Rotate: Middle click or CTRL + mouse move\n - Zoom: Mouse wheel, SHIFT + mouse move",
+        #t = "Esse jogo é numa versão de teste. Não é ainda possivel de jogar.\n\nPara começar um novo jogo, usa o menu Jogo acima.\n\nControlo da camera:\n - Para mexer : usa as bordas da tela (no modo tela cheia), clica na mapa, ou usa o ALT e o mouse\n - Para girar : clica com o botão do meio, ou usa o CTRL e o mouse\n - Zoom : usa a roda do mouse, ou o SHIFT e o mouse"
+    ],
+    [
+        #o = "\n   -----\nMichaël Lemaire - Programming\nBartosz Debski - Logo/3D models\nGlyn R Brown - Music",
+        #t = "\n   -----\nMichaël Lemaire - Programmação\nBartosz Debski - Logo/modelos 3D\nGlyn R Brown - Musica\nFrédéric Hoguin - Tradução em Português"
+    ],
+    [
+        #o = "Player name : ",
+        #t = "Nome do jogador : "
+    ],
+    [
+        #o = "Mod : ",
+        #t = "Mod : "
+    ],
+    [
+        #o = "ERROR : Requested mod not found.",
+        #t = "ERRO : Mod não achado."
+    ],
+    [
+        #o = "OK",
+        #t = "OK"
+    ],
+    [
+        #o = "Cancel",
+        #t = "Cancelar"
+    ],
+    [
+        #o = "Retry",
+        #t = "Tentar de novo"
+    ],
+    [
+        #o = "Yes",
+        #t = "Sim"
+    ],
+    [
+        #o = "No",
+        #t = "Não"
+    ],
+    [
+        #o = "Really quit (current game will be lost) ?",
+        #t = "Realmente sair (o jogo rolando será perdido) ?"
+    ],    
+
+
+
+
+
+    [
+        #o = "Released under GPLv2 license,",
+        #t = "Distribuado com licença GPLv2,"
+    ],
+    [
+        #o = "see COPYING file for details.",
+        #t = "leja o arquivo COPYING para mais detalhes."
+    ],
+
+
+
+    [
+        #o = "About...",
+        #t = "Sobre..."
+    ],
+    [
+        #o = "Game",
+        #t = "Jogo"
+    ],
+    [
+        #o = "New",
+        #t = "Novo"
+    ],
+    [
+        #o = "Pause",
+        #t = "Pausa"
+    ],
+    [
+        #o = "Resume",
+        #t = "Recomeçar"
+    ],
+    [
+        #o = "Quit",
+        #t = "Sair"
+    ],
+    [
+        #o = "Options",
+        #t = "Opções"
+    ],
+    [
+        #o = "Framerate limit >",
+        #t = "Máximo de imagens por segundo >"
+    ],
+    [
+        #o = "Unlimited",
+        #t = "Sem limite"
+    ],
+    [
+        #o = "Gamma correction >",
+        #t = "Correcção gamma >"
+    ],
+    [
+        #o = "Normal (1.0)",
+        #t = "Normal (1.0)"
+    ],
+    [
+        #o = "Bright (1.2)",
+        #t = "Claro (1.2)"
+    ],
+    [
+        #o = "Brighter (1.5)",
+        #t = "Mais claro (1.5)"
+    ],
+    [
+        #o = "Dark (0.8)",
+        #t = "Escuro (0.8)"
+    ],
+    [
+        #o = "Texture filtering >",
+        #t = "Filtragem das texturas >"
+    ],
+    [
+        #o = "None",
+        #t = "Nenhuma"
+    ],
+    [
+        #o = "Bilinear",
+        #t = "Bilinear"
+    ],
+    [
+        #o = "Mipmapped",
+        #t = "Mipmapped"
+    ],
+    [
+        #o = "Trilinear",
+        #t = "Trilinear"
+    ],
+    [
+        #o = "Screen mode >",
+        #t = "Modo do monitor >"
+    ],
+    [
+        #o = "Windowed",
+        #t = "Fenestrado"
+    ]
+]

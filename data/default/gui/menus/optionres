@@ -1,0 +1,15 @@
+[
+    #name        = "optionres",
+
+    #entries =
+    [
+        [ #name = "&Windowed" , #com = "screen.setvideomode(800,600,0)" ],
+        [ #name = "800 * 600" , #com = "screen.setvideomode(800,600,1)" ],
+        [ #name = "1024 * 768" , #com = "screen.setvideomode(1024,768,1)" ],
+        [ #name = "1280 * 1024" , #com = "screen.setvideomode(1280,1024,1)" ],
+        [ #name = "1600 * 1200" , #com = "screen.setvideomode(1600,1200,1)" ],
+        [ #name = "1920 * 1080" , #com = "screen.setvideomode(1920,1080,1)" ],
+        [ #name = "1280 * 768" , #com = "screen.setvideomode(1280,768,1)" ],
+        [ #name = "1440 * 900" , #com = "screen.setvideomode(1600,1200,1)" ]
+    ]
+]

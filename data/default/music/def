@@ -1,0 +1,6 @@
+#music =
+[
+    #file = "music/music.ogg",
+    #fadein = 0,
+    #fadeout = 3000
+]

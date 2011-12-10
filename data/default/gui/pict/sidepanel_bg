@@ -1,0 +1,7 @@
+[
+    #picture         = "gui/pict/sidepanel_bg.png",
+    #border_left     = 0,
+    #border_right    = 5,
+    #border_top      = 5,
+    #border_bottom   = 125
+]

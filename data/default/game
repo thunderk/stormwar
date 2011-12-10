@@ -1,0 +1,148 @@
+#game =
+[
+    #sound_entity_select = "sidepanel_select",
+    #sound_entity_drop   = "sidepanel_unselect",
+    #particle_range_tex = "part_range",
+    #particle_select_tex =
+    [
+        #picture        = "pict/sel_frame.png",
+        #border_left    = 5,
+        #border_right   = 5,
+        #border_top     = 5,
+        #border_bottom  = 5
+    ],
+    #entities =
+    [
+        #bridge =
+        [
+            #mesh = @"meshes/bridge",
+            #width = 1,
+            #height = 1,
+            #static = 1,
+            #selectable = 0,
+            #blended = 0,
+            #rangedist = 0.0,
+            #rangeangle = 0.0,
+            #keepdrop = 1,
+            #rules_drop =
+            [
+                #needground = 0,
+                #denyground = 1,
+                #groundconnex = 1,
+                #ground_entities = [ "bridge" ],
+                #allowed_entities = []
+            ]
+        ],
+        
+        
+        #temple =
+        [
+            #mesh = @"meshes/temple",
+            #width = 2,
+            #height = 2,
+            #static = 1,
+            #selectable = 1,
+            #blended = 1,
+            #rangedist = 5.0,
+            #rangeangle = 6.2831853,
+            #keepdrop = 0,
+            #rules_drop =
+            [
+                #needground = 1,
+                #denyground = 0,
+                #groundconnex = 0,
+                #ground_entities = [],
+                #allowed_entities = []
+            ]
+        ],
+        
+        
+        #workshop =
+        [
+            #mesh = @"meshes/workshop",
+            #width = 2,
+            #height = 2,
+            #static = 1,
+            #selectable = 1,
+            #blended = 0,
+            #rangedist = 0.0,
+            #rangeangle = 0.0,
+            #keepdrop = 0,
+            #rules_drop =
+            [
+                #needground = 1,
+                #denyground = 0,
+                #groundconnex = 0,
+                #ground_entities = [],
+                #allowed_entities = []
+            ]
+        ],
+        
+        
+        #generator =
+        [
+            #mesh = @"meshes/generator",
+            #width = 1,
+            #height = 1,
+            #static = 1,
+            #selectable = 1,
+            #blended = 0,
+            #rangedist = 3.2,
+            #rangeangle = 6.2831853,
+            #keepdrop = 0,
+            #rules_drop =
+            [
+                #needground = 1,
+                #denyground = 0,
+                #groundconnex = 0,
+                #ground_entities = [ "bridge" ],
+                #allowed_entities = [ "bridge" ]
+            ]
+        ],
+        
+        
+        #discthrower =
+        [
+            #mesh = @"meshes/discthrower",
+            #width = 1,
+            #height = 1,
+            #static = 1,
+            #selectable = 1,
+            #blended = 0,
+            #rangedist = 2.3,
+            #rangeangle = 6.2831853,
+            #keepdrop = 0,
+            #rules_drop =
+            [
+                #needground = 1,
+                #denyground = 0,
+                #groundconnex = 0,
+                #ground_entities = [ "bridge" ],
+                #allowed_entities = [ "bridge" ]
+            ]
+        ],
+
+
+        #suncannon =
+        [
+            #mesh = @"meshes/suncannon",
+            #width = 1,
+            #height = 1,
+            #static = 1,
+            #selectable = 1,
+            #blended = 0,
+            #rangedist = 0.0,
+            #rangeangle = 0.0,
+            #keepdrop = 0,
+            #rules_drop =
+            [
+                #needground = 1,
+                #denyground = 0,
+                #groundconnex = 0,
+                #ground_entities = [ "bridge" ],
+                #allowed_entities = [ "bridge" ]
+            ]
+        ]
+    ]
+]
+    

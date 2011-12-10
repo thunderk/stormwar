@@ -1,0 +1,6 @@
+#fonts =
+[
+    @"fonts/default8",
+    @"fonts/default12",
+    @"fonts/default16"
+]

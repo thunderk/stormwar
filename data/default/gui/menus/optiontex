@@ -1,0 +1,11 @@
+[
+    #name        = "optiontex",
+
+    #entries =
+    [
+        [ #name = "&None" ,      #com = "tex.setfilter(0)" ],
+        [ #name = "&Bilinear" ,  #com = "tex.setfilter(1)" ],
+        [ #name = "&Mipmapped" , #com = "tex.setfilter(2)" ],
+        [ #name = "&Trilinear" , #com = "tex.setfilter(3)" ]
+    ]
+]

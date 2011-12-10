@@ -1,0 +1,6 @@
+#sounds =
+[
+    [ #name = "thunder01",  #file = "sound/thunder01.ogg" ],
+    [ #name = "sidepanel_select",  #file = "sound/sp_select.ogg" ],
+    [ #name = "sidepanel_unselect",  #file = "sound/sp_unselect.ogg" ]
+]

@@ -1,0 +1,11 @@
+[
+    #name        = "game",
+
+    #entries =
+    [
+        [ #name = "&New" , #com = "dialogs.newgame()" ],
+        [ #name = "&Pause" , #com = "core.pause()" ],
+        [ #name = "&Resume" , #com = "core.resume()" ],
+        [ #name = "&Quit" , #com = "gui.askexit()" ]
+    ]
+]

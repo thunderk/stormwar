@@ -1,0 +1,7 @@
+[
+    #font_name       = "default8",
+    #font_picture    = "fonts/default8.png",
+    #char_width      = 5,
+    #char_height     = 9,
+    #hor_spacing     = 2
+]

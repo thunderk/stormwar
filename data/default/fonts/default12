@@ -1,0 +1,7 @@
+[
+    #font_name       = "default12",
+    #font_picture    = "fonts/default12.png",
+    #char_width      = 8,
+    #char_height     = 12,
+    #hor_spacing     = 4
+]

@@ -1,0 +1,168 @@
+[
+    #sidepanel     = @"gui/sidepanel",
+    #menubar       = @"gui/menubar",
+    #shell         = @"gui/shell",
+    #worldmap      = @"gui/map",
+    
+    #themes =
+    [
+        #dialog =
+        [
+            #bgtex =
+            [
+                #picture         = "gui/pict/dialogbg.png",
+                #border_left     = 7,
+                #border_right    = 7,
+                #border_top      = 27,
+                #border_bottom   = 7
+            ],
+            #fontname = "default12",
+            #fontoptions =
+            [
+                #monospace = 0,
+                #color_red = 255,
+                #color_green = 255,
+                #color_blue = 255
+            ],
+            #borderleft = 9,
+            #borderright = 4,
+            #bordertop = 24,
+            #borderbottom = 9
+        ],
+
+        #menu =
+        [
+            #bgtex = @"gui/pict/menu_bg",
+            #fontname = "default16",
+            #fontoptions = @"fonts/opt_menubar",
+            #borderleft = 9,
+            #borderright = 4,
+            #bordertop = 4,
+            #borderbottom = 9
+        ],
+        
+        #tooltip =
+        [
+            #bgtex =
+            [
+                #picture         = "gui/pict/tooltipbg.png",
+                #border_left     = 1,
+                #border_right    = 1,
+                #border_top      = 1,
+                #border_bottom   = 1
+            ],
+            #fontname = "default12",
+            #fontoptions =
+            [
+                #monospace = 0,
+                #color_red = 0,
+                #color_green = 0,
+                #color_blue = 0
+            ],
+            #borderleft = 2,
+            #borderright = 2,
+            #bordertop = 2,
+            #borderbottom = 2
+        ],
+        
+        #scrollbar =
+        [
+            #bgtex =
+            [
+                #picture         = "gui/pict/scrollbarbg.png",
+                #border_left     = 0,
+                #border_right    = 0,
+                #border_top      = 0,
+                #border_bottom   = 0
+            ],
+            #fontname = "default12",
+            #fontoptions =
+            [
+                #monospace = 0,
+                #color_red = 0,
+                #color_green = 0,
+                #color_blue = 0
+            ],
+            #borderleft = 0,
+            #borderright = 0,
+            #bordertop = 0,
+            #borderbottom = 0
+        ],
+        
+        #button =
+        [
+            #bgtex =
+            [
+                #picture         = "gui/pict/buttonbg.png",
+                #border_left     = 2,
+                #border_right    = 2,
+                #border_top      = 2,
+                #border_bottom   = 2
+            ],
+            #fontname = "default12",
+            #fontoptions =
+            [
+                #monospace = 0,
+                #color_red = 255,
+                #color_green = 255,
+                #color_blue = 255
+            ],
+            #borderleft = 4,
+            #borderright = 4,
+            #bordertop = 4,
+            #borderbottom = 4
+        ],
+
+        #buttonpushed =
+        [
+            #bgtex =
+            [
+                #picture         = "gui/pict/buttonpushed.png",
+                #border_left     = 2,
+                #border_right    = 2,
+                #border_top      = 2,
+                #border_bottom   = 2
+            ],
+            #fontname = "default12",
+            #fontoptions =
+            [
+                #monospace = 0,
+                #color_red = 230,
+                #color_green = 230,
+                #color_blue = 230
+            ],
+            #borderleft = 5,
+            #borderright = 4,
+            #bordertop = 5,
+            #borderbottom = 4
+        ],
+        
+        #input =
+        [
+            #bgtex =
+            [
+                #picture         = "gui/pict/shellbgbox.png",
+                #border_left     = 0,
+                #border_right    = 0,
+                #border_top      = 0,
+                #border_bottom   = 0
+            ],
+            #fontname = "default12",
+            #fontoptions = @"fonts/opt_shell",
+            #borderleft = 0,
+            #borderright = 0,
+            #bordertop = 0,
+            #borderbottom = 0
+        ]
+    ],
+
+    #menus         =
+    [
+        @"gui/menus/game",
+        @"gui/menus/optionfps",
+        @"gui/menus/optiongamma",
+        @"gui/menus/optionres",
+        @"gui/menus/options",
+        @"gui/menus/optiontex"
+    ]
+]

@@ -1,0 +1,308 @@
+#textures = [
+    [
+        #name = "sb_top",      #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/sb_top.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_diffuse = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "sb_bottom",      #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/sb_bottom.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_diffuse = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "sb_left",      #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/sb_left.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_diffuse = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "sb_right",      #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/sb_right.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_diffuse = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "sb_front",      #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/sb_front.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_diffuse = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "sb_back",      #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/sb_back.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_diffuse = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+
+
+    [
+        #name = "part_range",      #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/range.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_diffuse = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 50, #g = 50, #b = 50, #a = 255]
+    ],
+    [
+        #name = "bridge_top",  #filter = 1, #xwrap = 1, #ywrap = 1, #file = "tex/bridge_top.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "bridge_side", #filter = 1, #xwrap = 1, #ywrap = 0, #file = "tex/bridge_side.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "static_base",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/static_base.png",
+        #shiny = 60.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "discthrower_arm",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/discthrower_arm.png",
+        #shiny = 128.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "discthrower_body",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/discthrower_body.png",
+        #shiny = 40.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "discthrower_holder",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/discthrower_holder.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "suncannon_back",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/suncannon_back.png",
+        #shiny = 50.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "suncannon_cannon",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/suncannon_cannon.png",
+        #shiny = 70.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 150, #g = 150, #b = 150, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "suncannon_cord",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/suncannon_cord.png",
+        #shiny = 50.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "suncannon_holder",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/suncannon_holder.png",
+        #shiny = 50.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "suncannon_panel",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/suncannon_panel.png",
+        #shiny = 100.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 120, #a = 255],
+        #col_diffuse = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_specular = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "suncannon_ring",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/suncannon_ring.png",
+        #shiny = 50.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "generator_base1",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/generator_base1.png",
+        #shiny = 10.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 155, #g = 155, #b = 155, #a = 255],
+        #col_specular = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "generator_base2",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/generator_base2.png",
+        #shiny = 10.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 155, #g = 155, #b = 155, #a = 255],
+        #col_specular = [#r = 150, #g = 150, #b = 150, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "generator_crystal",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/generator_crystal.png",
+        #shiny = 50.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 155, #g = 155, #b = 155, #a = 255],
+        #col_specular = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "generator_pads",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/generator_pads.png",
+        #shiny = 10.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 155, #g = 155, #b = 155, #a = 255],
+        #col_specular = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "generator_pylons",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/generator_pylons.png",
+        #shiny = 10.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 155, #g = 155, #b = 155, #a = 255],
+        #col_specular = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "workshop_base",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/workshop_base.png",
+        #shiny = 10.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 155, #g = 155, #b = 155, #a = 255],
+        #col_specular = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "workshop_ss",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/workshop_ss.png",
+        #shiny = 100.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 185, #g = 185, #b = 185, #a = 255],
+        #col_specular = [#r = 230, #g = 230, #b = 230, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "temple_rim",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/temple_rim.png",
+        #shiny = 80.0,
+        #col_ambient = [#r = 80, #g = 80, #b = 80, #a = 255],
+        #col_diffuse = [#r = 175, #g = 175, #b = 175, #a = 255],
+        #col_specular = [#r = 225, #g = 225, #b = 225, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "temple_center",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/temple_center.png",
+        #shiny = 40.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "temple_pipes",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/temple_pipes.png",
+        #shiny = 128.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "temple_ring1",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/temple_ring1.png",
+        #shiny = 20.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_specular = [#r = 150, #g = 150, #b = 150, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "temple_ring2",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/temple_ring2.png",
+        #shiny = 20.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 200, #g = 200, #b = 200, #a = 255],
+        #col_specular = [#r = 150, #g = 150, #b = 150, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "temple_tornado",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/temple_tornado.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 155, #g = 155, #b = 155, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "temple_tornadofeet",  #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/temple_tornadofeet.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #col_diffuse = [#r = 155, #g = 155, #b = 155, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "grass",       #filter = 1, #xwrap = 1, #ywrap = 1, #file = "tex/grass.png",
+        #shiny = 2.0,
+        #col_ambient = [#r = 70, #g = 70, #b = 70, #a = 255],
+        #col_diffuse = [#r = 185, #g = 185, #b = 185, #a = 255],
+        #col_specular = [#r = 128, #g = 128, #b = 128, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "soil",        #filter = 1, #xwrap = 1, #ywrap = 0, #file = "tex/soil.png",
+        #shiny = 2.0,
+        #col_ambient = [#r = 70, #g = 70, #b = 70, #a = 255],
+        #col_diffuse = [#r = 185, #g = 185, #b = 185, #a = 255],
+        #col_specular = [#r = 128, #g = 128, #b = 128, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "clouds1",     #filter = 1, #xwrap = 0, #ywrap = 0, #file = "tex/cloud1.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "black",        #filter = 0, #xwrap = 1, #ywrap = 1, #file = "tex/black.png",
+        #shiny = 0.0,
+        #col_ambient = [#r = 50, #g = 50, #b = 50, #a = 255],
+        #col_diffuse = [#r = 205, #g = 205, #b = 205, #a = 255],
+        #col_specular = [#r = 0, #g = 0, #b = 0, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ],
+    [
+        #name = "simple_metal",        #filter = 0, #xwrap = 0, #ywrap = 0, #file = "tex/white.png",
+        #shiny = 90.0,
+        #col_ambient = [#r = 90, #g = 90, #b = 90, #a = 255],
+        #col_diffuse = [#r = 165, #g = 165, #b = 165, #a = 255],
+        #col_specular = [#r = 255, #g = 255, #b = 255, #a = 255],
+        #col_emission = [#r = 0, #g = 0, #b = 0, #a = 0]
+    ]
+]

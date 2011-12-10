@@ -1,0 +1,11 @@
+[
+    #name        = "optiongamma",
+
+    #entries =
+    [
+        [ #name = "&Normal (1.0)", #com = "graph.setgamma(1.0)" ],
+        [ #name = "&Bright (1.2)", #com = "graph.setgamma(1.25)" ],
+        [ #name = "&Brighter (1.5)", #com = "graph.setgamma(1.5)" ],
+        [ #name = "&Dark (0.8)", #com = "graph.setgamma(0.8)" ]
+    ]
+]

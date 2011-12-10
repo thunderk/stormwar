@@ -1,0 +1,11 @@
+[
+    #name        = "options",
+
+    #entries =
+    [
+        [ #name = "&Screen mode >", #com = "%optionres" ],
+        [ #name = "&Framerate limit >", #com = "%optionfps" ],
+        [ #name = "&Texture filtering >", #com = "%optiontex" ],
+        [ #name = "&Gamma correction >", #com = "%optiongamma" ]
+    ]
+]

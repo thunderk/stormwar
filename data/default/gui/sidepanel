@@ -1,0 +1,18 @@
+[
+    #width       = 125,
+    #texture     = @"gui/pict/sidepanel_bg",
+    #entity_w    = 64,
+    #entity_h    = 64,
+    #entities_bleft     = 28,
+    #entities_btop      = 28,
+    #entities_bbottom   = 153,
+    #entities_pict =
+    [
+        #bridge = "gui/icons/bridge.png",
+        #discthrower = "gui/icons/discthrower.png",
+        #suncannon = "gui/icons/suncannon.png",
+        #generator = "gui/icons/generator.png",
+        #temple = "gui/icons/temple.png",
+        #workshop = "gui/icons/workshop.png"
+    ]
+]

@@ -1,0 +1,18 @@
+[
+    #height      = 25,
+    #texture     = @"gui/pict/menubar_bg",
+
+    #fontname    = "default16",
+    #fontoptions = @"fonts/opt_menubar",
+    
+    #startx      = 5,
+    #starty      = 1,
+    #entryspace  = 15,
+
+    #entries =
+    [
+        [#name = "&Game"     , #com = "%game"],
+        [#name = "&Options"  , #com = "%options"],
+        [#name = "&About..." , #com = "gui.showmsg(cat(versionfull(), \"&\n   -----\nMichaël Lemaire - Programming\nBartosz Debski - Logo/3D models\nGlyn R Brown - Music\"))"]
+    ]
+]

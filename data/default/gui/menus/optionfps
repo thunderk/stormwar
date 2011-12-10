@@ -1,0 +1,16 @@
+[
+    #name        = "optionfps",
+
+    #entries =
+    [
+        [ #name = "&Unlimited" ,     #com = "graph.setfpsmax(0)" ],
+        [ #name = "25 FPS" ,        #com = "graph.setfpsmax(25)" ],
+        [ #name = "30 FPS" ,        #com = "graph.setfpsmax(30)" ],
+        [ #name = "40 FPS" ,        #com = "graph.setfpsmax(40)" ],
+        [ #name = "50 FPS" ,        #com = "graph.setfpsmax(50)" ],
+        [ #name = "60 FPS" ,        #com = "graph.setfpsmax(60)" ],
+        [ #name = "75 FPS" ,        #com = "graph.setfpsmax(75)" ],
+        [ #name = "85 FPS" ,        #com = "graph.setfpsmax(85)" ],
+        [ #name = "100 FPS" ,       #com = "graph.setfpsmax(100)" ]
+    ]
+]

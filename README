@@ -1,0 +1,76 @@
+The current state of StormWar is: NOT PLAYABLE, UNDER DEVELOPMENT.
+
+This version is still for development testing and should not be considered
+as a public release.
+
+****************
+*** Overview ***
+****************
+
+...
+
+
+**********************
+*** Camera control ***
+**********************
+
+* Mouse:
+    - When in 'grabbed mode', screen edges allow to scroll the camera
+    - The mouse wheel is used to zoom
+    - Holding the middle button while moving the mouse will rotate the camera around a point
+    - Clicking on the map will scroll the camera towards the position clicked
+
+* Keyboard:
+    - CTRL  + mouse move => rotate around a point
+    - SHIFT + mouse move => zoom
+    - ALT   + mouse move => scroll
+
+********************
+*** Trouble keys ***
+********************
+
+F1      : Show/hide a graphical shell.
+CTRL+F1 : Return to a standard windowed 800*600 resolution.
+CTRL+F2 : Restart to the title scene with "default" mod.
+CTRL+F12: Quit the game without asking anything (current game state will be lost).
+          This might take some time to wait for modules to end softly but should
+          always succeed (unless the SDL system crashed).
+
+Function keys other than CTRL+F12 might not work at all if the program hang up.
+
+
+*************************
+*** Information files ***
+*************************
+
+    COPYING                 License full terms.
+    INSTALL                 How to build and install this software.
+    ChangeLog               Log of all significant changes.
+    NEWS                    What's new in this version (simpler than the ChangeLog).
+    BUGS                    Kwown bugs and troubleshooting.
+    AUTHORS                 List of all contributors.
+    TODO                    Things to do for future versions.
+    docs/html/index.html    Code documentation generated with Doxygen.
+
+
+********************************
+*** Technical specifications ***
+********************************
+
+Programming language:
+    ANSI C
+
+License:
+    GNU General Public License version 2 (GPLv2)
+
+Documentation:
+    generated with Doxygen
+
+Compiling requirements:
+    GNU build tools (gcc/make)
+
+Compiling and running requirements:
+    SDL library, version 1.2.x
+    SDL_image library
+    SDL_mixer library (optional, for sound)
+    OpenGL's GL and GLU libraries

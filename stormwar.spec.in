@@ -1,0 +1,43 @@
+%define name @PACKAGE@
+%define version @VERSION@
+%define release 1
+
+Summary: StormWar - A 3D realtime strategy game.
+Name: %{name}
+Version: %{version}
+Release: %{release}
+Source0: %{name}-%{version}.tar.gz
+License: GPL
+Group: Amusements/Games
+BuildRoot: /var/tmp/%{name}-buildroot
+Prefix: %{_prefix}
+Packager: ThunderK <stormwar@free.fr>
+#BuildRequires: SDL-devel
+
+%description
+StormWar is a 3D realtime strategy game based on mods.
+It is released with a default mod.
+
+%prep
+rm -rf ${RPM_BUILD_ROOT}
+
+%setup 
+
+%build
+CFLAGS="$RPM_OPT_FLAGS" ./configure --prefix=%{prefix}
+make
+
+%install
+rm -rf $RPM_BUILD_ROOT
+make install prefix=$RPM_BUILD_ROOT/%{prefix}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(-,root,root)
+%doc README ChangeLog COPYING BUGS TODO NEWS AUTHORS
+%dir %{_datadir}/stormwar
+%{_datadir}/stormwar/stormwar_data
+%{_datadir}/stormwar/default
+%attr(755,root,root) %{_bindir}/stormwar

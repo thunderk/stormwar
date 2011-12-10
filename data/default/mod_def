@@ -1,0 +1,38 @@
+[
+    #gui                = @"gui/def",
+
+    #env                = @"env",
+    #ground             = @"ground",
+
+    #sounds             = @"sound/def",
+    #music              = @"music/def",
+
+    #i18n               = @"i18n/def",
+
+    #game               = @"game",
+    
+    #graph =
+    [
+        #loading_pict = "pict/loading.png",
+        #cursors    = @"cursors/def",
+        #fonts      = @"fonts/def",
+        #textures   = @"tex/def",
+        #gamma      = 1.0,
+        #opengl     =
+        [
+            #clearcolor = [#r = 0, #g = 0, #b = 0, #a = 0],
+            #view_x = 125,
+            #view_y = 25,
+            #view_wrel = 1,
+            #view_hrel = 1,
+            #view_w = -125,
+            #view_h = -25,
+            #fog =
+            [
+                #fog = 1,
+                #color = [#r = 85, #g = 85, #b = 87, #a = 255],
+                #density = 0.015
+            ]
+        ]
+    ]
+]

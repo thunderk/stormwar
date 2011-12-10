@@ -1,0 +1,261 @@
+# Anjuta Version 1.2.3 
+Compatibility Level: 1 
+
+<PROJECT_DESCRIPTION_START>
+StormWar is a RealTime Strategy game based on Activision's "NetStorm, Islands at war".<PROJECT_DESCRIPTION_END>
+<CONFIG_PROGS_START>
+<CONFIG_PROGS_END>
+<CONFIG_LIBS_START>
+<CONFIG_LIBS_END>
+<CONFIG_HEADERS_START>
+<CONFIG_HEADERS_END>
+<CONFIG_CHARACTERISTICS_START>
+<CONFIG_CHARACTERISTICS_END>
+<CONFIG_LIB_FUNCS_START>
+<CONFIG_LIB_FUNCS_END>
+<CONFIG_ADDITIONAL_START>
+<CONFIG_ADDITIONAL_END>
+<CONFIG_FILES_START>
+<CONFIG_FILES_END>
+<MAKEFILE_AM_START>
+<MAKEFILE_AM_END>
+
+props.file.type=project
+
+anjuta.version=1.2.3
+anjuta.compatibility.level=1
+
+project.name=stormwar
+project.type=GENERIC
+project.target.type=EXECUTABLE
+project.version=0.1.1
+project.author=ThunderK
+project.source.target=src/stormwar
+project.has.gettext=1
+project.gui.command=
+project.programming.language=C++
+project.excluded.modules=intl
+
+project.config.extra.modules.before=
+project.config.extra.modules.after=
+project.config.blocked=1
+project.config.disable.overwriting=1 1 1 1 1 1 1 1 1 
+
+project.menu.entry=stormwar Version 0.1.1
+project.menu.group=Application
+project.menu.comment=stormwar Version 0.1.1
+project.menu.icon=
+project.menu.need.terminal=0
+
+project.configure.options=--enable-debug_string --enable-debug_mode
+anjuta.program.arguments=
+preferences.build.option.jobs=0
+preferences.build.option.silent=0
+preferences.build.option.autosave=1
+preferences.anjuta.make.options=-k
+preferences.make=make
+preferences.build.option.keep.going=0
+preferences.build.option.warn.undef=0
+preferences.autoformat.custom.style= -bad -bap -bbo -bl -bli0 -bls -cbi0 -ci4 -cli4 -di4 -i4 -npcs -nprs -nsob -nss -nut -psl -saf -sai -saw -sbi0 -ts4
+preferences.indent.opening=0
+preferences.autoformat.disable=0
+preferences.indent.automatic=1
+preferences.use.tabs=0
+preferences.indent.size=4
+preferences.tabsize=4
+preferences.indent.closing=0
+
+module.include.name=.
+module.include.type=
+module.include.files=
+
+module.source.name=.
+module.source.type=
+module.source.files=\
+	src/kernel.c\
+	src/kernel.h\
+	src/main.c\
+	src/main.h\
+	src/gui/gui.c\
+	src/gui/gui.h\
+	src/gui/internal/menubar.c\
+	src/gui/internal/menubar.h\
+	src/gui/internal/sidepanel.c\
+	src/gui/internal/sidepanel.h\
+	src/test.c\
+	src/test.h\
+	src/gui/internal/guipopupmenu.c\
+	src/gui/internal/guipopupmenu.h\
+	src/system/mem.c\
+	src/system/mem.h\
+	src/tools/fonct.c\
+	src/tools/fonct.h\
+	src/world/world.c\
+	src/world/world.h\
+	src/world/ground.c\
+	src/world/ground.h\
+	src/sound/sound.c\
+	src/sound/sound.h\
+	src/tools/tools.c\
+	src/tools/tools.h\
+	src/tools/internal/texturizer.c\
+	src/tools/internal/texturizer.h\
+	src/gui/internal/guishell.c\
+	src/gui/internal/guishell.h\
+	src/gui/internal/guiinput.c\
+	src/gui/internal/guiinput.h\
+	src/gui/worldmap.c\
+	src/gui/worldmap.h\
+	src/world/env.c\
+	src/world/env.h\
+	src/world/internal/flocking.c\
+	src/world/internal/flocking.h\
+	src/world/internal/thunderbolt.c\
+	src/world/internal/thunderbolt.h\
+	src/gui/internal/guiwidget.c\
+	src/gui/internal/guiwidget.h\
+	src/fake.h\
+	src/gui/internal/guioutput.c\
+	src/gui/internal/guioutput.h\
+	src/game/game.c\
+	src/game/game.h\
+	src/gui/internal/guiscrollbar.c\
+	src/gui/internal/guiscrollbar.h\
+	src/game/internal/entity.c\
+	src/game/internal/entity.h\
+	src/gui/guidialog.h\
+	src/gui/guidialog.c\
+	src/gui/internal/guitheme.c\
+	src/gui/internal/guitheme.h\
+	src/gui/internal/guibutton.c\
+	src/gui/internal/guibutton.h\
+	src/world/internal/skybox.c\
+	src/world/internal/skybox.h\
+	src/gui/internal/guitooltip.c\
+	src/gui/internal/guitooltip.h\
+	src/game/internal/player.c\
+	src/game/internal/player.h\
+	src/core/core.h\
+	src/core/shell.h\
+	src/core/types.h\
+	src/core/impl/core.c\
+	src/core/impl/shell.c\
+	src/core/impl/shellfunction.c\
+	src/core/impl/shellfunction.h\
+	src/game/internal/game.h\
+	src/tools/completion.c\
+	src/tools/completion.h\
+	src/game/internal/piece.c\
+	src/game/internal/piece.h\
+	src/core/string.h\
+	src/core/impl/string.c\
+	src/core/constants.h\
+	src/core/macros.h\
+	src/core/impl/impl.h\
+	src/game/internal/droprules.c\
+	src/game/internal/droprules.h\
+	src/game/internal/register.c\
+	src/game/internal/register.h\
+	src/core/impl/i18n.c\
+	src/core/i18n.h\
+	src/gui/internal/gamedialogs.c\
+	src/gui/internal/gamedialogs.h\
+	src/core/comp.h\
+	src/core/impl/comp.c\
+	src/core/reader.h\
+	src/core/impl/reader.c\
+	src/core/var.h\
+	src/core/impl/var.c\
+	src/graphics/gl2dobject.h\
+	src/graphics/gl3dobject.h\
+	src/graphics/gliterator.h\
+	src/graphics/glsurface.h\
+	src/graphics/gltextrender.h\
+	src/graphics/graphics.h\
+	src/graphics/input.h\
+	src/graphics/light.h\
+	src/graphics/types.h\
+	src/graphics/impl/glsurface.c\
+	src/graphics/impl/opengl.h\
+	src/graphics/glrect.h\
+	src/graphics/color.h\
+	src/graphics/impl/types.c\
+	src/graphics/camera.h\
+	src/graphics/glmesh.h\
+	src/graphics/particle.h\
+	src/graphics/impl/gl2dobject.c\
+	src/graphics/impl/impl.h\
+	src/graphics/impl/gltextrender.c\
+	src/tools/anim.h\
+	src/graphics/impl/gliterator.c\
+	src/graphics/impl/graphics.c\
+	src/graphics/impl/glscreen.c\
+	src/graphics/impl/glscreen.h\
+	src/graphics/impl/cursor.c\
+	src/graphics/impl/cursor.h\
+	src/graphics/impl/camera.c\
+	src/graphics/impl/gltextures.c\
+	src/graphics/impl/gl3dobject.c\
+	src/graphics/impl/color.c\
+	src/graphics/impl/glmesh.c\
+	src/graphics/impl/glmeshpart.c\
+	src/graphics/impl/glmeshpart.h\
+	src/graphics/impl/particle.c\
+	src/graphics/impl/light.c\
+	src/graphics/impl/opengl.c\
+	src/graphics/impl/input.c\
+	src/tools/anim.c\
+	src/core/ptrarray.h\
+	src/core/impl/ptrarray.c\
+	src/tools/varvalidator.c\
+	src/tools/varvalidator.h\
+	src/graphics/impl/keyboard.c\
+	src/graphics/impl/keyboard.h\
+	src/game/internal/gamecamera.c\
+	src/graphics/impl/gltextures.h\
+	src/gui/guitexture.c\
+	src/gui/guitexture.h
+
+module.pixmap.name=.
+module.pixmap.type=
+module.pixmap.files=
+
+module.data.name=.
+module.data.type=
+module.data.files=
+
+module.help.name=.
+module.help.type=
+module.help.files=
+
+module.doc.name=.
+module.doc.type=
+module.doc.files=\
+	README\
+	AUTHORS\
+	COPYING\
+	ChangeLog\
+	INSTALL\
+	NEWS\
+	TODO
+
+module.po.files=
+
+compiler.options.supports=
+compiler.options.include.paths=\
+	.\
+	..
+compiler.options.library.paths=
+compiler.options.libraries=
+compiler.options.libraries.selected=
+compiler.options.defines=\
+	HAVE_CONFIG_H
+compiler.options.defines.selected=
+compiler.options.warning.buttons=0 0 1 1 0 1 0 0 0 0 0 0 0 1 0 0 
+compiler.options.optimize.buttons=0 0 1 0 
+compiler.options.other.buttons=1 0 
+compiler.options.other.c.flags=
+compiler.options.other.l.flags=
+compiler.options.other.l.libs=
+
+project.src.paths=

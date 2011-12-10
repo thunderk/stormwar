@@ -1,0 +1,7 @@
+[
+    #font_name       = "default16",
+    #font_picture    = "fonts/default16.png",
+    #char_width      = 10,
+    #char_height     = 16,
+    #hor_spacing     = 6
+]

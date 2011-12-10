@@ -1,0 +1,153 @@
+#cursors =
+[
+    #bottom1 =
+    [
+        #pict       = "cursors/c_bottom.png",
+        #hotspot_x  = 10,
+        #hotspot_y  = 9
+    ],
+    #bottom2 =
+    [
+        #pict       = "cursors/c_bottom2.png",
+        #hotspot_x  = 10,
+        #hotspot_y  = 19
+    ],
+    #bottom3 =
+    [
+        #pict       = "cursors/c_bottom3.png",
+        #hotspot_x  = 10,
+        #hotspot_y  = 29
+    ],
+    #bottomleft1 =
+    [
+        #pict       = "cursors/c_bottomleft.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 12
+    ],
+    #bottomleft2 =
+    [
+        #pict       = "cursors/c_bottomleft2.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 19
+    ],
+    #bottomleft3 =
+    [
+        #pict       = "cursors/c_bottomleft3.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 26
+    ],
+    #bottomright1 =
+    [
+        #pict       = "cursors/c_bottomright.png",
+        #hotspot_x  = 12,
+        #hotspot_y  = 12
+    ],
+    #bottomright2 =
+    [
+        #pict       = "cursors/c_bottomright2.png",
+        #hotspot_x  = 19,
+        #hotspot_y  = 19
+    ],
+    #bottomright3 =
+    [
+        #pict       = "cursors/c_bottomright3.png",
+        #hotspot_x  = 26,
+        #hotspot_y  = 26
+    ],
+    #left1 =
+    [
+        #pict       = "cursors/c_left.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 10
+    ],
+    #left2 =
+    [
+        #pict       = "cursors/c_left2.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 10
+    ],
+    #left3 =
+    [
+        #pict       = "cursors/c_left3.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 10
+    ],
+    #normal1 =
+    [
+        #pict       = "cursors/c_normal.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 0
+    ],
+    #right1 =
+    [
+        #pict       = "cursors/c_right.png",
+        #hotspot_x  = 9,
+        #hotspot_y  = 10
+    ],
+    #right2 =
+    [
+        #pict       = "cursors/c_right2.png",
+        #hotspot_x  = 19,
+        #hotspot_y  = 10
+    ],
+    #right3 =
+    [
+        #pict       = "cursors/c_right3.png",
+        #hotspot_x  = 29,
+        #hotspot_y  = 10
+    ],
+    #top1 =
+    [
+        #pict       = "cursors/c_top.png",
+        #hotspot_x  = 10,
+        #hotspot_y  = 0
+    ],
+    #top2 =
+    [
+        #pict       = "cursors/c_top2.png",
+        #hotspot_x  = 10,
+        #hotspot_y  = 0
+    ],
+    #top3 =
+    [
+        #pict       = "cursors/c_top3.png",
+        #hotspot_x  = 10,
+        #hotspot_y  = 0
+    ],
+    #topleft1 =
+    [
+        #pict       = "cursors/c_topleft.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 0
+    ],
+    #topleft2 =
+    [
+        #pict       = "cursors/c_topleft2.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 0
+    ],
+    #topleft3 =
+    [
+        #pict       = "cursors/c_topleft3.png",
+        #hotspot_x  = 0,
+        #hotspot_y  = 0
+    ],
+    #topright1 =
+    [
+        #pict       = "cursors/c_topright.png",
+        #hotspot_x  = 12,
+        #hotspot_y  = 0
+    ],
+    #topright2 =
+    [
+        #pict       = "cursors/c_topright2.png",
+        #hotspot_x  = 19,
+        #hotspot_y  = 0
+    ],
+    #topright3 =
+    [
+        #pict       = "cursors/c_topright3.png",
+        #hotspot_x  = 26,
+        #hotspot_y  = 0
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    #screen_layout      = [#dock = 3, #offsetx = 0, #offsety = 0, #layer = 1],
+    #bg                 = "gui/pict/shellbg.png",
+    #rect_output        = [#x = 8, #y = 8, #w = 387, #h = 187],
+    #rect_input         = [#x = 8, #y = 205, #w = 387, #h = 12],
+    
+    #output =
+    [
+        #bgcolor = [#r = 100, #g = 100, #b = 100, #a = 255],
+        #font    = "default8",
+        #fontopt = @"fonts/opt_shell",
+        #scrollbarwidth = 10
+    ],
+
+    #shellcolor_user    = [#r = 255, #g = 255, #b = 255, #a = 255],
+    #shellcolor_error   = [#r = 255, #g = 50, #b = 50, #a = 255],
+    #shellcolor_info    = [#r = 50, #g = 255, #b = 50, #a = 255],
+    #shellcolor_debug   = [#r = 50, #g = 50, #b = 150, #a = 255],
+    #shellcolor_harddebug = [#r = 0, #g = 0, #b = 100, #a = 255]
+]

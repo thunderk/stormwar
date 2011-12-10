@@ -1,0 +1,331 @@
+[
+    #anim =
+    [
+        #calm =
+        [
+            #part0_top = [#x = [], #y = [], #z = [], #angh = [], #angv = []],
+            #part1_bottom = [#x = [], #y = [], #z = [], #angh = [], #angv = []],
+            #part2_left = [#x = [], #y = [], #z = [], #angh = [], #angv = []],
+            #part3_right = [#x = [], #y = [], #z = [], #angh = [], #angv = []],
+            #part4_front = [#x = [], #y = [], #z = [], #angh = [], #angv = []],
+            #part5_back = [#x = [], #y = [], #z = [], #angh = [], #angv = []],
+            #part6_cloud1 =
+            [
+                #x = [],
+                #y = [],
+                #z = [],
+                #angh = [0, 0.0, 100000, 6.28319],
+                #angv = []
+            ],
+            #part7_cloud2 =
+            [
+                #x = [0, -1.0, 40000, 1.0, 80000, -1.0],
+                #y = [],
+                #z = [0, -1.0, 40000, 1.0, 80000, -1.0],
+                #angh = [0, 3.14159, 80000, -3.14159],
+                #angv = []
+            ],
+            #part8_cloud3 =
+            [
+                #x = [],
+                #y = [],
+                #z = [],
+                #angh = [0, 0.0, 120000, 6.28319],
+                #angv = [0, 1.0]
+            ],
+            #part9_cloud4 =
+            [
+                #x = [],
+                #y = [],
+                #z = [],
+                #angh = [0, 0.0, 90000, 6.28319],
+                #angv = [0, -1.0]
+            ]
+        ]
+    ],
+    
+    #controlpoints = [],
+    
+    #parts =
+    [
+        #part0_top =
+        [
+            #flatshading = 1, #twosided = 0, #blended = 0, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "sb_top",
+            #vertices =
+            [
+                [-10.0, 10.0, 10.0],
+                [-10.0, 10.0, -10.0],
+                [10.0, 10.0, -10.0],
+                [10.0, 10.0, 10.0]
+            ],
+            #normals =
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords =
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ],
+        
+        #part1_bottom =
+        [
+            #flatshading = 1, #twosided = 0, #blended = 0, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "sb_bottom",
+            #vertices = 
+            [
+                [-10.0, -10.0, -10.0],
+                [-10.0, -10.0, 10.0],
+                [10.0, -10.0, 10.0],
+                [10.0, -10.0, -10.0]
+            ],
+            #normals = 
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords = 
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ],
+        
+        #part2_left = 
+        [
+            #flatshading = 1, #twosided = 0, #blended = 0, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "sb_left",
+            #vertices = 
+            [
+                [-10.0, 10.0, 10.0],
+                [-10.0, -10.0, 10.0],
+                [-10.0, -10.0, -10.0],
+                [-10.0, 10.0, -10.0]
+            ],
+            #normals =
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords =
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ],
+        
+        #part3_right=
+        [
+            #flatshading = 1, #twosided = 0, #blended = 0, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "sb_right",
+            #vertices =
+            [
+                [10.0, 10.0, -10.0],
+                [10.0, -10.0, -10.0],
+                [10.0, -10.0, 10.0],
+                [10.0, 10.0, 10.0]
+            ],
+            #normals =
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords =
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ],
+        
+        #part4_front =
+        [
+            #flatshading = 1, #twosided = 0, #blended = 0, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "sb_front",
+            #vertices =
+            [
+                [-10.0, 10.0, -10.0],
+                [-10.0, -10.0, -10.0],
+                [10.0, -10.0, -10.0],
+                [10.0, 10.0, -10.0]
+            ],
+            #normals =
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords =
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ],
+        
+        #part5_back =
+        [
+            #flatshading = 1, #twosided = 0, #blended = 0, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "sb_back",
+            #vertices =
+            [
+                [10.0, 10.0, 10.0],
+                [10.0, -10.0, 10.0],
+                [-10.0, -10.0, 10.0],
+                [-10.0 ,10.0 ,10.0]
+            ],
+            #normals =
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords =
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ],
+        
+        #part6_cloud1 =
+        [
+            #flatshading = 1, #twosided = 0, #blended = 1, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "clouds1",
+            #vertices =
+            [
+                [-6.0, -2.5, -6.0],
+                [-6.0, -2.5, 6.0],
+                [6.0, -2.5, 6.0],
+                [6.0, -2.5, -6.0]
+            ],
+            #normals =
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords =
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ],
+        
+        #part7_cloud2 =
+        [
+            #flatshading = 1, #twosided = 0, #blended = 1, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "clouds1",
+            #vertices =
+            [
+                [-5.0, -2.0, -5.0],
+                [-5.0, -2.0, 5.0],
+                [5.0, -2.0, 5.0],
+                [5.0, -2.0, -5.0]
+            ],
+            #normals =
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords =
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ],
+        
+        #part8_cloud3 =
+        [
+            #flatshading = 1, #twosided = 0, #blended = 1, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "clouds1",
+            #vertices =
+            [
+                [-5.0, -5.0, -5.0],
+                [-5.0, -5.0, 5.0],
+                [5.0, -5.0, 5.0],
+                [5.0, -5.0, -5.0]
+            ],
+            #normals =
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords =
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ],
+        
+        #part9_cloud4 =
+        [
+            #flatshading = 1, #twosided = 0, #blended = 1, #normalsmode = 0, #texcoordsmode = 0,
+            #tex = "clouds1",
+            #vertices =
+            [
+                [-5.0, -5.0, -5.0],
+                [-5.0, -5.0, 5.0],
+                [5.0, -5.0, 5.0],
+                [5.0, -5.0, -5.0]
+            ],
+            #normals =
+            [
+                [0.0, 0.0, 0.0]
+            ],
+            #texcoords =
+            [
+                [0.0, 0.0],
+                [0.0, 1.0],
+                [1.0, 1.0],
+                [1.0, 0.0]
+            ],
+            #faces =
+            [
+                [0, 1, 2, 3]
+            ]
+        ]
+    ]
+]

@@ -1,0 +1,34 @@
+The current state of StormWar is: NOT PLAYABLE, UNDER DEVELOPMENT.
+
+This version is still for development testing.
+
+
+What's new in 0.15.1 ?
+    - Rewrited graphical engine.
+    - Added 2D effects (smooth moves and color transitions).
+    - Added 3D transparency.
+    - Better lights handling.
+    - New camera control and inputs manager.
+    - Moving clouds.
+    - New entities: sun cannon, workshop.
+    - Updated entity: temple.
+    - Brand new music theme.
+    - Added Portuguese and Polish translation.
+    - Many, many (but not always directly visible) other things.
+
+What was new in 0.14.x ?
+    - Restored zooming with mouse wheel.
+    - Units placement is now allowed or not by a set of rules.
+    - Units are red when they can't be dropped.
+    - Camera field of vision is now displayed by a cone on the map.
+    - Improved file format for 3D objects.
+    - New entities: energy generator, temple.
+    - New disc thrower design.
+    - Message box on errors for win32 platforms.
+    - Fixed a big bug that could make the game crash at loading.
+    - Divided datas size by 2.
+    - Improved loading speed.
+    - Fixed several little memleaks.
+    - Fixed several little other bugs.
+
+For more details (also more technical), you can have a look at the file named 'ChangeLog'.
