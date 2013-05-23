@@ -1,13 +1,13 @@
-The current state of StormWar is: NOT PLAYABLE, UNDER DEVELOPMENT.
+The current state of StormWar is: NOT PLAYABLE, NOT UNDER DEVELOPMENT.
 
-This version is still for development testing and should not be considered
-as a public release.
+This is the repository of the now dead project StormWar. The project goal was to create a real time strategy game engine, similar to the old game "NetStorm, Islands at War" but it was aborted before becoming playable. Feel free to use whatever suits you.
 
 ****************
 *** Overview ***
 ****************
 
-...
+StormWar is a 3D realtime strategy game inspired by a quite unknown but great old game: NetStorm, Islands at war.
+It is released under the GPL license.
 
 
 **********************
