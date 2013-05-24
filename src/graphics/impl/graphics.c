@@ -318,7 +318,7 @@ prefsCallback(Var prefs)
     valid = VarValidator_new();
     VarValidator_declareIntVar(valid, "screen_width", 800);
     VarValidator_declareIntVar(valid, "screen_height", 600);
-    VarValidator_declareIntVar(valid, "screen_full", 1);
+    VarValidator_declareIntVar(valid, "screen_full", 0);
     VarValidator_declareIntVar(valid, "fpsmax", 50);
 
     VarValidator_validate(valid, prefs);

@@ -1,0 +1,15 @@
+*~
+*.o
+stamp-h1
+stormwar.spec
+.deps
+Makefile
+autom4te.cache
+configure
+config.h
+config.h.in
+config.log
+config.status
+config_osx.h
+config_w32.h
+src/stormwar
