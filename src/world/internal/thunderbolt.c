@@ -321,6 +321,7 @@ thunderboltSet(Var vbolt)
     rnd_factor = MAX(rnd_factor, 0);
     rnd_factor = 1000 - MIN(rnd_factor, 1000);
     sndsample = soundGetSample(Var_getValueString(Var_getArrayElemByCName(vbolt, "sound")));
+    soundSetSampleVolume(sndsample, soundVolume(20));
 }
 
 /*----------------------------------------------------------------------------*/
